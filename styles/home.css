@@ -1,0 +1,2777 @@
+/* Akira Expanded (Titles/Navigation) */
+@font-face {
+  font-family: 'Akira Expanded';
+  src: url('/assest/akira_expanded/Akira\ Expanded\ Demo.otf') format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+
+/* Teko (Subtitles) */
+@font-face {
+  font-family: 'Teko';
+  src: url('/assest/Racing_Sans_One\,Teko/Racing_Sans_One/RacingSansOne-Regular.ttf') format('woff2'),
+       url('/assest/Racing_Sans_One\,Teko/Racing_Sans_One/RacingSansOne-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* Proxima Nova (Body Text) */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/assest/Proxima-Nova-Extra-Condensed/Demo_Fonts/Fontspring-DEMO-proximanova-blackit.otf') format('woff2'),
+       url('/assest/Proxima-Nova-Extra-Condensed/Demo_Fonts/Fontspring-DEMO-proximanova-regular.otf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+:root{
+    --primary-orange: #f14b23;
+    --white: #ffffff;
+    --black: #222;
+    --black-secondary: rgba(0, 0, 0, 0.721);
+    --card-grey: rgba(169, 169, 169, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+li{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--primary-orange);
+}
+
+
+
+.top-left a,
+.top-left i{
+    font-family: 'Teko';
+    letter-spacing: 1.5px;
+    color: var(--white);
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.top-left a:hover{
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.top-left i{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top-center img{
+    width: 35px;
+    height: 35px;
+}
+.top-center p{
+    color: var(--white);
+    font-family: 'Teko';
+    font-size: 16px;
+}
+
+.top-right select{
+    outline: none;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.top-right select:hover{
+    cursor: pointer;
+}
+
+.section, 
+section{
+    padding: 0 50px;
+}
+
+.hero{
+    background-color: var(--white);
+    border-radius: 50px 50px 0 0;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    -ms-border-radius: 50px 50px 0 0;
+    -o-border-radius: 50px 50px 0 0;
+}
+
+.hero-logo {
+    flex: 1;
+}
+.navbar {
+    flex: 5;
+}
+.hero-navbar-right {
+    flex: 2;
+}
+
+.hero-logo span{
+    font-size: 36px;
+    font-weight: 700;
+}
+.hero-navbar{
+  white-space: nowrap;
+}
+.hero-navbar .cart-market{
+    width: 30px;
+    height: 30px;
+}
+.navbar-list li a{
+    font-family: 'Akira Expanded';
+    font-size: 14px;
+    font-weight: 700;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+.navbar-list li a:hover{
+    border-bottom: 1px solid var(--primary-orange);
+    color: var(--primary-orange);
+}
+.favoris-icon span{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--primary-orange);
+    padding: 0 5px;
+    right: 12px;
+    top: -8px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.hero-navbar .cart-shop-img{
+    padding: 5px;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+.hero-navbar .cart-shop-img span{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--primary-orange);
+    padding: 0 5px;
+    right: 0px;
+    top: 0;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+.hero-navbar .cart-shop-img:hover{
+    cursor: pointer;
+    background-color: var(--primary-orange);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.hero-navbar .cart-shop-img:hover span{
+    color: var(--primary-orange);
+    background-color: var(--white);
+}
+
+.hero-navbar-right i{
+    font-size: 24px;
+    font-weight: 600;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+.hero-navbar-right i:hover{
+    cursor: pointer;
+    color: var(--primary-orange);
+}
+
+.input-search input{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    border-right: 2px solid var(--primary-orange);
+}
+.input-search i{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+.input-search i:hover{
+    cursor: pointer;
+    color: var(--primary-orange);
+}
+
+
+
+.hero-img{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-image: url(/assest/img/hero-img.webp);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.lyr{
+    background-color: var(--black);
+    opacity: .3;
+}
+
+.hero-img h1{
+    color: var(--white);
+    font-family: 'Akira Expanded';
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 140px;
+}
+.hero-img h1 span{
+    color: var(--primary-orange);
+}
+
+.hero-img p{
+    color: var(--white);
+    font-family: 'Teko';
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.hero-img .hero-img-desc .hero-img-btn{
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+    padding: 10px 35px;
+    border: 1.4px solid var(--white);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+
+.hero-img .hero-img-desc .hero-img-btn:hover{
+    color: var(--primary-orange);
+    background-color: var(--white);
+    border: 1.4px solid var(--primary-orange);
+}
+
+
+
+
+.shop-by{
+    background-color: white;
+}
+.shop-by-goals .shop-by-goals-title,
+.section-title{
+    color: var(--black);
+    font-family: 'Akira Expanded';
+}
+.shop-by-goals .shop-by-goals-title span,
+.section-title span{
+    color: var(--primary-orange);
+}
+.shop-by-goals-card{
+    height: 450px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.shop-by-goals-card-card-1{
+    background-image: url(/assest/img/796.jpg);
+    background-size: cover;
+}
+.shop-by-goals-card-card-2{
+    background-image: url(/assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
+    background-size: cover;
+}
+.shop-by-goals-card-card-3{
+    background-image: url(/assest/img/296.jpg);
+    background-size: cover;
+}
+.shop-by-goals-card-card-4{
+    background-image: url(/assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
+    background-size: cover;
+}
+.shop-by-goals-card-card-5{
+    background-image: url(/assest/img/7352.jpg);
+    background-size: cover;
+}
+.shop-by-goals-card-card-6{
+    background-image: url(/assest/img/750.jpg);
+    background-size: cover;
+}
+
+.shop-by-goals-card-title h2{
+    color: var(--white);
+    font-family: 'Teko';
+    font-size: 36px;
+}
+.shop-by-goals-card-title span{
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(250, 250, 250, 0.783);
+}
+
+.shop-by-goals-card-btn{
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+    padding: 10px 35px;
+    border: 1.4px solid var(--white);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+
+.shop-by-goals-card-btn:hover{
+    color: var(--primary-orange);
+    background-color: var(--white);
+    border: 1.4px solid var(--primary-orange);
+}
+
+
+
+
+.shop-by-category-cards .owl-nav{
+    width: 104.5%;
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-by-category-cards .owl-nav .owl-prev ,
+.shop-by-category-cards .owl-nav .owl-next {
+    background-color: #f14b23;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.shop-by-category-cards .owl-nav .owl-prev:hover ,
+.shop-by-category-cards .owl-nav .owl-next:hover{
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shop-by-category-cards .owl-nav .owl-prev i,
+.shop-by-category-cards .owl-nav .owl-next i{
+    padding: 12px !important;
+    font-size: 24px !important;
+    background-color: var(--primary-orange) !important;
+    color: var(--white);
+    transition: 0.4s;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.shop-by-category-cards .owl-nav .owl-prev i:hover,
+.shop-by-category-cards .owl-nav .owl-next i:hover{
+    background-color: var(--white) !important;
+    color: var(--primary-orange);
+}
+.shop-by-category-cards .owl-dots{
+    margin-top: 20px;
+}
+.shop-by-category-cards .owl-dots .owl-dot span{
+    background-color: var(--card-grey) !important;
+    padding: 6px !important;
+}
+.shop-by-category-cards .owl-dot.active span{
+    background-color: var(--primary-orange) !important;
+}
+.shop-by-category-card{
+    width: 340px;
+    background-color: var(--card-grey);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.shop-by-category-card-title{
+    color: var(--primary-orange);
+    font-family: 'Teko';
+    font-size: 34px;
+}
+.shop-by-category-card img{
+    width: 250px;
+    height: 250px;
+}
+.shop-by-category-card-btn{ 
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'Akira Expanded';
+    font-size: 16px;
+    padding: 10px 35px;
+    border: 1.4px solid var(--white);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.shop-by-category-card-btn:hover{
+    color: var(--primary-orange);
+    background-color: var(--white);
+    border: 1.4px solid var(--primary-orange);
+}
+
+
+
+
+
+.latest-deals-cards .owl-nav{
+    width: 104.5%;
+    position: absolute;
+    top: 40%;
+    left: -25px;
+    display: flex !important;
+    justify-content: space-between;
+}
+.latest-deals-cards .owl-nav .owl-prev ,
+.latest-deals-cards .owl-nav .owl-next {
+    background-color: #f14b23;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.latest-deals-cards .owl-nav .owl-prev:hover ,
+.latest-deals-cards .owl-nav .owl-next:hover{
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.latest-deals-cards .owl-nav .owl-prev i,
+.latest-deals-cards .owl-nav .owl-next i{
+    padding: 12px !important;
+    font-size: 24px !important;
+    background-color: var(--primary-orange) !important;
+    color: var(--white);
+    transition: 0.4s;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.latest-deals-cards .owl-nav .owl-prev i:hover,
+.latest-deals-cards .owl-nav .owl-next i:hover{
+    background-color: var(--white) !important;
+    color: var(--primary-orange);
+}
+.latest-deals-cards .owl-dots{
+    display: block !important;
+    margin-top: 20px ;
+}
+.latest-deals-cards .owl-dots .owl-dot span{
+    background-color: var(--card-grey) !important;
+    padding: 6px !important;
+    margin-top: 20px;
+}
+.latest-deals-cards .owl-dot.active span{
+    background-color: var(--primary-orange) !important;
+}
+
+.latest-deals-card{
+    width: 340px;
+    overflow: hidden;
+    background-color: var(--card-grey);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.latest-deals-card .pourcentage{
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'teko';
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    left: -35px;
+    padding: 5px 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.latest-deals-card .latest-deals-card-content .latest-deals-card-title{
+    color: var(--primary-orange);
+    font-family: 'Teko';
+    font-size: 34px;
+}
+
+.latest-deals-card .latest-deals-card-content .latest-deals-card-img{
+    width: 220px;
+    height: 220px;
+}
+.latest-deals-card .latest-deals-card-content .card-desc{
+    color: var(--black-secondary); 
+    font-family: 'Teko';
+    font-size: 18px;
+}
+.latest-deals-card .latest-deals-card-content .card-desc .product-desc{
+    color: var(--black-secondary); 
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+}
+.latest-deals-card .latest-deals-card-content .card-desc .product-rate{
+    font-size: 16px;
+    margin-top: -10px;
+}
+.latest-deals-card .latest-deals-card-content .card-desc .product-rate i{
+    color: var(--primary-orange);
+}
+.latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price{
+    font-size: 24px;
+}
+
+.latest-deals-card-btn{
+    width: 90%;
+    bottom: -50px;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+
+
+.latest-deals-card :hover .latest-deals-card-btn{
+    bottom:  15px;
+}
+.latest-deals-card-btn button{
+    width: 100%;
+    color: var(--white);
+    background-color: var(--black);
+    font-family: 'Akira Expanded';
+    font-size: 14px;
+    font-weight: 200;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.latest-deals-card-btn button:hover{
+    color: var(--white);
+    background-color: var(--primary-orange);
+}
+
+
+
+.latest-deals-card :hover .latest-deals-card-info{
+    cursor: pointer;
+    top: 20px;
+    right: 15px;
+}
+.latest-deals-card-info:hover{
+    color: var(--white);
+    background-color: var(--primary-orange);
+}
+.latest-deals-card-info{
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.latest-deals-card:hover .latest-deals-card-like{
+    cursor: pointer;
+    top: 70px;
+    right: 15px;
+}
+.latest-deals-card-like:hover{
+    color: var(--white);
+    background-color: var(--primary-orange);
+}
+.latest-deals-card-like{
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.latest-deals-card :hover .latest-deals-card-eye{
+    cursor: pointer;
+    top: 120px;
+    right: 15px;
+}
+.latest-deals-card-eye:hover{
+    color: var(--white);
+    background-color: var(--primary-orange);
+}
+.latest-deals-card-eye{
+    position: absolute;
+    top: 120px;
+    right: -150px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+
+
+
+
+.follow-us{
+    padding: 0;
+    background-color: var(--white);
+}
+.follow-us-content{
+    width: 100%;
+    height: 300px;
+    background-image: url(../assest/img/portrait-d-un-athlete-masculin-en-bonne-sante-et-en-forme-portant-des-uniformes-de-sport-de-l-eau-potable-ou-des-proteines-et-souriant-p\ \(1\).jpg);
+    background-size: 100% 100%;
+}
+.follow-us-content-lyr{
+    background-color: var(--black);
+    opacity: .2;
+}
+.follow-us-content-desc h1{
+    color: var(--black);
+}
+.follow-us-content-desc span{
+    color: var(--white);
+}
+.follow-us-content-desc p{
+    color: var(--white);
+    font-family: 'teko';
+    font-size: 16px;
+}
+.sociale-media-links a{
+    color: var(--white);
+    background-color: var(--black);
+    padding: 10px 25px;
+    font-family: 'Teko';
+    border-left: 2px solid var(--primary-orange);
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.sociale-media-links a:hover{
+    background-color: var(--primary-orange);
+}
+
+
+
+
+
+
+.badges{
+    background-color: var(--white);
+    border-radius: 0 0 50px 50px;
+    -webkit-border-radius: 0 0 50px 50px;
+    -moz-border-radius: 0 0 50px 50px;
+    -ms-border-radius: 0 0 50px 50px;
+    -o-border-radius: 0 0 50px 50px;
+}
+.badges-shipping img{
+        width: 55px;
+        height:55px;
+}
+.badges-container i{
+    color: var(--primary-orange);
+    font-size: 48px;
+    margin-top: 5px;
+}
+.badges-container h4{
+    font-family: 'teko';
+    font-size: 24px;
+}
+.badges-container p{
+    color: var(--black-secondary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.footer-container-top{
+    border-bottom: 2px solid var(--white);
+}
+.footer-logo span{
+    color: var(--white);
+    font-size: 36px;
+    font-weight: 700;
+}
+.footer-links-title{
+    color: var(--white);
+    font-family: 'teko';
+    font-size: 22px;
+}
+.footer-links-container ul{
+    margin-top: 10px;
+}
+.footer-links-container li{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: -25px;
+    margin-top: 5px;
+}
+.footer-links-container li a{
+    color: var(--black);
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+.footer-links-container li a:hover{
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+.footer-copy-right{
+    font-family: 'teko';
+    letter-spacing: 1px;
+    color: var(--white);
+}
+.footer-copy-right a{
+    color: var(--white);
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+}
+.footer-copy-right a:hover{
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .top-left a,
+    .top-left i{
+        font-size: 14px;
+        font-family: 'Teko';
+        letter-spacing: 1.3px;
+        color: var(--white);
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .top-left i{
+        color: var(--black);
+        font-size: 18px;
+    }
+
+    .top-center img{
+        width: 30px;
+        height: 30px;
+    }
+    .top-center p{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 14px;
+    }
+
+    .top-right select{
+        outline: none;
+        font-size: 14px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .top-right select:hover{
+        cursor: pointer;
+    }
+
+
+    .section, 
+    section{
+        padding: 0 40px;
+    }
+
+    .hero{
+        background-color: var(--white);
+        border-radius: 50px 50px 0 0;
+        -webkit-border-radius: 50px 50px 0 0;
+        -moz-border-radius: 50px 50px 0 0;
+        -ms-border-radius: 50px 50px 0 0;
+        -o-border-radius: 50px 50px 0 0;
+    }
+    .hero-logo span,
+    .hero-logo-responsive span{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero-navbar{
+      white-space: nowrap;
+    }
+    .hero-navbar .cart-market{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-list li a{
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        font-weight: 700;
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+    .navbar-list li a:hover{
+        border-bottom: 1px solid var(--primary-orange);
+        color: var(--primary-orange);
+    }
+    .favoris-icon span{
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--white);
+        background-color: var(--primary-orange);
+        padding: 0 5px;
+        right: -10px;
+        top: -4px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .hero-navbar .cart-shop-img{
+        padding: 5px;
+        transition: all ease-in-out .5s;
+        -webkit-transition: all ease-in-out .5s;
+        -moz-transition: all ease-in-out .5s;
+        -ms-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+    }
+    .hero-navbar .cart-shop-img img{
+        width: 25px;
+        height: 25px;
+    }
+    .hero-navbar .cart-shop-img span{
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--white);
+        background-color: var(--primary-orange);
+        padding: 0 5px;
+        right: 0px;
+        top: 3px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        transition: all ease-in-out .5s;
+        -webkit-transition: all ease-in-out .5s;
+        -moz-transition: all ease-in-out .5s;
+        -ms-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+    }
+    .hero-navbar .cart-shop-img:hover{
+        cursor: pointer;
+        background-color: var(--primary-orange);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .hero-navbar .cart-shop-img:hover span{
+        color: var(--primary-orange);
+        background-color: var(--white);
+    }
+
+    .hero-navbar-right i{
+        font-size: 20px;
+        font-weight: 600;
+        transition: all ease-in-out .3s;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+    }
+    .hero-navbar-right i:hover{
+        cursor: pointer;
+        color: var(--primary-orange);
+    }
+
+    .hero-navbar .btn{
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+    .btn-close:focus{
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+
+    .offcanvas-input-search{
+        width: 90%;
+    }
+    .offcanvas-input-search input{
+        padding: 8px 15px;
+        outline: none;
+        border: none;
+    }
+    .offcanvas-input-search input:focus{
+        border: 1px solid var(--primary-orange);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .offcanvas-input-search i{
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+    .offcanvas-input-search i:hover{
+        cursor: pointer;
+        color: var(--primary-orange);
+    }
+
+
+
+    .hero-img{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        background-image: url(/assest/img/hero-img.webp);
+        background-size: 100% 100%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .lyr{
+        background-color: var(--black);
+        opacity: .3;
+    }
+
+    .hero-img h1{
+        width: 80%;
+        color: var(--white);
+        font-family: 'Akira Expanded';
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 100px;
+    }
+    .hero-img h1 span{
+        color: var(--primary-orange);
+    }
+
+    .hero-img p{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 18px;
+        margin-top: 13px;
+    }
+
+    .hero-img .hero-img-desc .hero-img-btn{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+    .hero-img .hero-img-desc .hero-img-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+    .shop-by{
+        background-color: white;
+    }
+    .shop-by-goals .shop-by-goals-title,
+    .section-title{
+        font-size: 28px;
+        color: var(--black);
+        font-family: 'Akira Expanded';
+    }
+    .shop-by-goals .shop-by-goals-title span,
+    .section-title span{
+        color: var(--primary-orange);
+    }
+    .shop-by-goals-card{
+        height: 450px;
+        overflow: hidden;
+        padding: 10px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .shop-by-goals-card-card-1{
+        background-image: url(/assest/img/796.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-2{
+        background-image: url(/assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-3{
+        background-image: url(/assest/img/296.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-4{
+        background-image: url(/assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-5{
+        background-image: url(/assest/img/7352.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-6{
+        background-image: url(/assest/img/750.jpg);
+        background-size: cover;
+    }
+
+    .shop-by-goals-card-title h2{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+    .shop-by-goals-card-title span{
+        font-family: 'Proxima Nova';
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(250, 250, 250, 0.783);
+    }
+
+    .shop-by-goals-card-btn{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+    .shop-by-goals-card-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+    .shop-by-category-cards .owl-nav{
+        width: 107%;
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev ,
+    .shop-by-category-cards .owl-nav .owl-next {
+        background-color: #f14b23;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev:hover ,
+    .shop-by-category-cards .owl-nav .owl-next:hover{
+        background-color: transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .shop-by-category-cards .owl-nav .owl-prev i,
+    .shop-by-category-cards .owl-nav .owl-next i{
+        padding: 12px !important;
+        font-size: 20px !important;
+        background-color: var(--primary-orange) !important;
+        color: var(--white);
+        transition: 0.4s;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev i:hover,
+    .shop-by-category-cards .owl-nav .owl-next i:hover{
+        background-color: var(--white) !important;
+        color: var(--primary-orange);
+    }
+    .shop-by-category-cards .owl-dots{
+        margin-top: 20px;
+    }
+    .shop-by-category-cards .owl-dots .owl-dot span{
+        background-color: var(--card-grey) !important;
+        padding: 6px !important;
+    }
+    .shop-by-category-cards .owl-dot.active span{
+        background-color: var(--primary-orange) !important;
+    }
+    .shop-by-category-card{
+        background-color: var(--card-grey);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .shop-by-category-card-title{
+        color: var(--primary-orange);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+    .shop-by-category-card img{
+        width: 230px;
+        height: 230px;
+    }
+    .shop-by-category-card-btn{ 
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .shop-by-category-card-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+
+    .latest-deals-cards .owl-nav{
+        width: 107%;
+        position: absolute;
+        top: 42%;
+        left: -25px;
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .latest-deals-cards .owl-nav .owl-prev ,
+    .latest-deals-cards .owl-nav .owl-next {
+        background-color: #f14b23;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .latest-deals-cards .owl-nav .owl-prev:hover ,
+    .latest-deals-cards .owl-nav .owl-next:hover{
+        background-color: transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .latest-deals-cards .owl-nav .owl-prev i,
+    .latest-deals-cards .owl-nav .owl-next i{
+        padding: 12px !important;
+        font-size: 24px !important;
+        background-color: var(--primary-orange) !important;
+        color: var(--white);
+        transition: 0.4s;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .latest-deals-cards .owl-nav .owl-prev i:hover,
+    .latest-deals-cards .owl-nav .owl-next i:hover{
+        background-color: var(--white) !important;
+        color: var(--primary-orange);
+    }
+    .latest-deals-cards .owl-dots{
+        display: block !important;
+        margin-top: 20px ;
+    }
+    .latest-deals-cards .owl-dots .owl-dot span{
+        background-color: var(--card-grey) !important;
+        padding: 6px !important;
+        margin-top: 20px;
+    }
+    .latest-deals-cards .owl-dot.active span{
+        background-color: var(--primary-orange) !important;
+    }
+
+    .latest-deals-card{
+        overflow: hidden;
+        background-color: var(--card-grey);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .latest-deals-card .pourcentage{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'teko';
+        font-size: 20px;
+        position: absolute;
+        top: 14px;
+        left: -35px;
+        padding: 5px 50px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-title{
+        color: var(--primary-orange);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-img{
+        width: 220px;
+        height: 220px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc{
+        color: var(--black-secondary); 
+        font-family: 'Teko';
+        font-size: 16px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-desc{
+        color: var(--black-secondary); 
+        font-family: 'Proxima Nova';
+        font-size: 16px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate i{
+        color: var(--primary-orange);
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price{
+        font-size: 22px;
+    }
+
+    .latest-deals-card-btn{
+        width: 90%;
+        bottom: -50px;
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+
+
+    .latest-deals-card :hover .latest-deals-card-btn{
+        bottom:  15px;
+    }
+    .latest-deals-card-btn button{
+        width: 100%;
+        color: var(--white);
+        background-color: var(--black);
+        font-family: 'Akira Expanded';
+        font-size: 12px;
+        font-weight: 200;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .latest-deals-card-btn button:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+
+
+
+    .latest-deals-card :hover .latest-deals-card-info{
+        cursor: pointer;
+        top: 20px;
+        right: 15px;
+    }
+    .latest-deals-card-info:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-info{
+        position: absolute;
+        top: 20px;
+        right: -50px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card:hover .latest-deals-card-like{
+        cursor: pointer;
+        top: 70px;
+        right: 15px;
+    }
+    .latest-deals-card-like:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-like{
+        position: absolute;
+        top: 70px;
+        right: -100px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card :hover .latest-deals-card-eye{
+        cursor: pointer;
+        top: 120px;
+        right: 15px;
+    }
+    .latest-deals-card-eye:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-eye{
+        position: absolute;
+        top: 120px;
+        right: -150px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+
+
+
+    .follow-us{
+        padding: 0;
+        background-color: var(--white);
+    }
+    .follow-us-content{
+        width: 100%;
+        background-image: url(../assest/img/portrait-d-un-athlete-masculin-en-bonne-sante-et-en-forme-portant-des-uniformes-de-sport-de-l-eau-potable-ou-des-proteines-et-souriant-p\ \(1\).jpg);
+        background-size: 100% 100%;
+    }
+    .follow-us-content-lyr{
+        background-color: var(--black);
+        opacity: .2;
+    }
+    .follow-us-content-desc h1{
+        font-size: 28px;
+        color: var(--black);
+    }
+    .follow-us-content-desc span{
+        color: var(--white);
+    }
+    .follow-us-content-desc p{
+        color: var(--white);
+        font-family: 'teko';
+        font-size: 14px;
+    }
+    .sociale-media-links a{
+        color: var(--white);
+        background-color: var(--black);
+        padding: 10px 25px;
+        font-family: 'Teko';
+        border: 1px solid var(--primary-orange);
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .sociale-media-links a:hover{
+        background-color: var(--primary-orange);
+    }
+
+
+
+
+
+
+    .badges{
+        background-color: var(--white);
+        border-radius: 0 0 50px 50px;
+        -webkit-border-radius: 0 0 50px 50px;
+        -moz-border-radius: 0 0 50px 50px;
+        -ms-border-radius: 0 0 50px 50px;
+        -o-border-radius: 0 0 50px 50px;
+    }
+    .badges-shipping img{
+        width: 45px;
+        height: 45px;
+    }
+    .badges-container i{
+        color: var(--primary-orange);
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .badges-container h4{
+        font-family: 'teko';
+        font-size: 18px;
+    }
+    .badges-container p{
+        color: var(--black-secondary);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+
+    .footer-container-top{
+        border-bottom: 2px solid var(--white);
+    }
+    .footer-logo span{
+        color: var(--white);
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .footer-links-title{
+        color: var(--white);
+        font-family: 'teko';
+        font-size: 18px;
+    }
+    .footer-links-container ul{
+        margin-top: 10px;
+    }
+    .footer-links-container li{
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    .footer-links-container li a{
+        color: var(--black);
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+}
+    .footer-links-container li a:hover{
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+    }
+    .footer-copy-right{
+        font-family: 'teko';
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: var(--white);
+    }
+    .footer-copy-right a{
+        color: var(--white);
+        transition: all ease-in-out .3s;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+    }
+    .footer-copy-right a:hover{
+        color: var(--black);
+        border-bottom: 2px solid var(--black);
+    }
+}
+
+@media (max-width: 576px) and (max-width: 714px){
+    .top-left{
+        display: none;
+    }
+    .top-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .top-center img{
+        width: 25px;
+        height: 25px;
+    }
+    .top-center p{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 12px;
+    }
+
+
+    .section, 
+    section{
+        padding: 0 30px;
+    }
+
+    .hero{
+        background-color: var(--white);
+        border-radius: 50px 50px 0 0;
+        -webkit-border-radius: 50px 50px 0 0;
+        -moz-border-radius: 50px 50px 0 0;
+        -ms-border-radius: 50px 50px 0 0;
+        -o-border-radius: 50px 50px 0 0;
+    }
+    .hero-logo span{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .hero-navbar{
+      white-space: nowrap;
+    }
+    .hero-navbar .cart-market{
+        width: 30px;
+        height: 30px;
+    }
+    .hero-navbar .cart-shop-img{
+        padding: 5px;
+        transition: all ease-in-out .5s;
+        -webkit-transition: all ease-in-out .5s;
+        -moz-transition: all ease-in-out .5s;
+        -ms-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+    }
+    .hero-navbar .cart-shop-img img{
+        width: 25px;
+        height: 25px;
+    }
+    .hero-navbar .cart-shop-img span{
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--white);
+        background-color: var(--primary-orange);
+        padding: 0 5px;
+        right: 0px;
+        top: 3px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        transition: all ease-in-out .5s;
+        -webkit-transition: all ease-in-out .5s;
+        -moz-transition: all ease-in-out .5s;
+        -ms-transition: all ease-in-out .5s;
+        -o-transition: all ease-in-out .5s;
+    }
+    .hero-navbar .cart-shop-img:hover{
+        cursor: pointer;
+        background-color: var(--primary-orange);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .hero-navbar .cart-shop-img:hover span{
+        color: var(--primary-orange);
+        background-color: var(--white);
+    }
+
+    .hero-navbar .btn{
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+    .btn-close:focus{
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+
+    .offcanvas-input-search{
+        width: 90%;
+    }
+    .offcanvas-input-search input{
+        padding: 8px 15px;
+        outline: none;
+        border: none;
+    }
+    .offcanvas-input-search input:focus{
+        border: 1px solid var(--primary-orange);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .offcanvas-input-search i{
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 600;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+    }
+    .offcanvas-input-search i:hover{
+        cursor: pointer;
+        color: var(--primary-orange);
+    }
+    .navbar-list li a{
+        font-family: 'Akira Expanded';
+        font-size: 12px;
+        font-weight: 700;
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+    .navbar-list li a:hover{
+        border-bottom: 1px solid var(--primary-orange);
+        color: var(--primary-orange);
+    }
+
+
+
+    .hero-img{
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        background-image: url(/assest/img/hero-img.webp);
+        background-size: 100% 100%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .lyr{
+        background-color: var(--black);
+        opacity: .3;
+    }
+
+    .hero-img h1{
+        width: 80%;
+        text-align: center;
+        color: var(--white);
+        font-family: 'Akira Expanded';
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-top: 100px;
+    }
+    .hero-img h1 span{
+        color: var(--primary-orange);
+    }
+
+    .hero-img p{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 16px;
+        margin-top: 13px;
+    }
+
+    .hero-img .hero-img-desc .hero-img-btn{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 12px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+    .hero-img .hero-img-desc .hero-img-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+    .shop-by{
+        background-color: white;
+    }
+    .shop-by-goals .shop-by-goals-title,
+    .section-title{
+        font-size: 28px;
+        color: var(--black);
+        font-family: 'Akira Expanded';
+    }
+    .shop-by-goals .shop-by-goals-title span,
+    .section-title span{
+        color: var(--primary-orange);
+    }
+    .shop-by-goals-card{
+        height: 450px;
+        overflow: hidden;
+        padding: 10px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .shop-by-goals-card-card-1{
+        background-image: url(/assest/img/796.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-2{
+        background-image: url(/assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-3{
+        background-image: url(/assest/img/296.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-4{
+        background-image: url(/assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-5{
+        background-image: url(/assest/img/7352.jpg);
+        background-size: cover;
+    }
+    .shop-by-goals-card-card-6{
+        background-image: url(/assest/img/750.jpg);
+        background-size: cover;
+    }
+
+    .shop-by-goals-card-title h2{
+        color: var(--white);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+    .shop-by-goals-card-title span{
+        font-family: 'Proxima Nova';
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(250, 250, 250, 0.783);
+    }
+
+    .shop-by-goals-card-btn{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+    .shop-by-goals-card-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+    .shop-by-category-cards .owl-nav{
+        width: 110%;
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev ,
+    .shop-by-category-cards .owl-nav .owl-next {
+        background-color: #f14b23;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev:hover ,
+    .shop-by-category-cards .owl-nav .owl-next:hover{
+        background-color: transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .shop-by-category-cards .owl-nav .owl-prev i,
+    .shop-by-category-cards .owl-nav .owl-next i{
+        padding: 12px !important;
+        font-size: 20px !important;
+        background-color: var(--primary-orange) !important;
+        color: var(--white);
+        transition: 0.4s;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .shop-by-category-cards .owl-nav .owl-prev i:hover,
+    .shop-by-category-cards .owl-nav .owl-next i:hover{
+        background-color: var(--white) !important;
+        color: var(--primary-orange);
+    }
+    .shop-by-category-cards .owl-dots{
+        margin-top: 20px;
+    }
+    .shop-by-category-cards .owl-dots .owl-dot span{
+        background-color: var(--card-grey) !important;
+        padding: 6px !important;
+    }
+    .shop-by-category-cards .owl-dot.active span{
+        background-color: var(--primary-orange) !important;
+    }
+    .shop-by-category-card{
+        background-color: var(--card-grey);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    .shop-by-category-card-title{
+        color: var(--primary-orange);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+    .shop-by-category-card img{
+        width: 230px;
+        height: 230px;
+    }
+    .shop-by-category-card-btn{ 
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        padding: 10px 35px;
+        border: 1.4px solid var(--white);
+        border-radius: 35px;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        -ms-border-radius: 35px;
+        -o-border-radius: 35px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .shop-by-category-card-btn:hover{
+        color: var(--primary-orange);
+        background-color: var(--white);
+        border: 1.4px solid var(--primary-orange);
+    }
+
+
+
+
+
+    .latest-deals-cards .owl-nav{
+        width: 110%;
+        position: absolute;
+        top: 42%;
+        left: -25px;
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .latest-deals-cards .owl-nav .owl-prev ,
+    .latest-deals-cards .owl-nav .owl-next {
+        background-color: #f14b23;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    .latest-deals-cards .owl-nav .owl-prev:hover ,
+    .latest-deals-cards .owl-nav .owl-next:hover{
+        background-color: transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .latest-deals-cards .owl-nav .owl-prev i,
+    .latest-deals-cards .owl-nav .owl-next i{
+        padding: 12px !important;
+        font-size: 24px !important;
+        background-color: var(--primary-orange) !important;
+        color: var(--white);
+        transition: 0.4s;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+    .latest-deals-cards .owl-nav .owl-prev i:hover,
+    .latest-deals-cards .owl-nav .owl-next i:hover{
+        background-color: var(--white) !important;
+        color: var(--primary-orange);
+    }
+    .latest-deals-cards .owl-dots{
+        display: block !important;
+        margin-top: 20px ;
+    }
+    .latest-deals-cards .owl-dots .owl-dot span{
+        background-color: var(--card-grey) !important;
+        padding: 6px !important;
+        margin-top: 20px;
+    }
+    .latest-deals-cards .owl-dot.active span{
+        background-color: var(--primary-orange) !important;
+    }
+
+    .latest-deals-card{
+        overflow: hidden;
+        background-color: var(--card-grey);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .latest-deals-card .pourcentage{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'teko';
+        font-size: 20px;
+        position: absolute;
+        top: 14px;
+        left: -35px;
+        padding: 5px 50px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-title{
+        color: var(--primary-orange);
+        font-family: 'Teko';
+        font-size: 30px;
+    }
+
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-img{
+        width: 220px;
+        height: 220px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc{
+        color: var(--black-secondary); 
+        font-family: 'Teko';
+        font-size: 16px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-desc{
+        color: var(--black-secondary); 
+        font-family: 'Proxima Nova';
+        font-size: 16px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate{
+        font-size: 14px;
+        margin-top: -10px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate i{
+        color: var(--primary-orange);
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price{
+        font-size: 22px;
+    }
+
+    .latest-deals-card-btn{
+        width: 90%;
+        bottom: -50px;
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+
+
+    .latest-deals-card :hover .latest-deals-card-btn{
+        bottom:  15px;
+    }
+    .latest-deals-card-btn button{
+        width: 100%;
+        color: var(--white);
+        background-color: var(--black);
+        font-family: 'Akira Expanded';
+        font-size: 12px;
+        font-weight: 200;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .latest-deals-card-btn button:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+
+
+
+    .latest-deals-card :hover .latest-deals-card-info{
+        cursor: pointer;
+        top: 20px;
+        right: 15px;
+    }
+    .latest-deals-card-info:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-info{
+        position: absolute;
+        top: 20px;
+        right: -50px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card:hover .latest-deals-card-like{
+        cursor: pointer;
+        top: 70px;
+        right: 15px;
+    }
+    .latest-deals-card-like:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-like{
+        position: absolute;
+        top: 70px;
+        right: -100px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card :hover .latest-deals-card-eye{
+        cursor: pointer;
+        top: 120px;
+        right: 15px;
+    }
+    .latest-deals-card-eye:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-eye{
+        position: absolute;
+        top: 120px;
+        right: -150px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+
+
+
+    .follow-us{
+        padding: 0;
+        background-color: var(--white);
+    }
+    .follow-us-content{
+        width: 100%;
+        background-image: url(../assest/img/portrait-d-un-athlete-masculin-en-bonne-sante-et-en-forme-portant-des-uniformes-de-sport-de-l-eau-potable-ou-des-proteines-et-souriant-p\ \(1\).jpg);
+        background-size: 100% 100%;
+    }
+    .follow-us-content-lyr{
+        background-color: var(--black);
+        opacity: .2;
+    }
+    .follow-us-content-desc h1{
+        font-size: 24px;
+        color: var(--black);
+    }
+    .follow-us-content-desc span{
+        color: var(--white);
+    }
+    .follow-us-content-desc p{
+        color: var(--white);
+        font-family: 'teko';
+        font-size: 12px;
+    }
+    .sociale-media-links a{
+        color: var(--white);
+        background-color: var(--black);
+        padding: 10px 25px;
+        font-family: 'Teko';
+        border: 1px solid var(--primary-orange);
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .sociale-media-links a:hover{
+        background-color: var(--primary-orange);
+    }
+
+
+
+
+
+
+    .badges{
+        background-color: var(--white);
+        border-radius: 0 0 50px 50px;
+        -webkit-border-radius: 0 0 50px 50px;
+        -moz-border-radius: 0 0 50px 50px;
+        -ms-border-radius: 0 0 50px 50px;
+        -o-border-radius: 0 0 50px 50px;
+    }
+    .badges-shipping img{
+        width: 35px;
+        height: 35px;
+    }
+    .badges-container i{
+        color: var(--primary-orange);
+        font-size: 35px;
+        margin-top: 5px;
+    }
+    .badges-container h4{
+        font-family: 'teko';
+        font-size: 16px;
+    }
+    .badges-container p{
+        width: 80%;
+        margin: auto;
+        color: var(--black-secondary);
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+
+    .footer-container-top{
+        border-bottom: 2px solid var(--white);
+    }
+    .footer-logo{
+        text-align: center;
+    }
+    .footer-logo span{
+        color: var(--white);
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .footer-links-title{
+        padding-bottom: 5px;
+        color: var(--white);
+        font-family: 'teko';
+        font-size: 18px;
+    }
+    .footer-links-container{
+        text-align: center;
+    }
+    .footer-links-container ul{
+        margin-top: 10px;
+    }
+    .footer-links-container li{
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    .footer-links-container li a{
+        color: var(--black);
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+}
+    .footer-links-container li a:hover{
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+    }
+    .footer-copy-right{
+        font-family: 'teko';
+        font-size: 12px;
+        letter-spacing: 1px;
+        color: var(--white);
+    }
+    .footer-copy-right a{
+        color: var(--white);
+        transition: all ease-in-out .3s;
+        -webkit-transition: all ease-in-out .3s;
+        -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+        -o-transition: all ease-in-out .3s;
+    }
+    .footer-copy-right a:hover{
+        color: var(--black);
+        border-bottom: 2px solid var(--black);
+    }
+}
+
+@media screen and (max-width: 426px){
+    .hero-img .hero-img-desc h1{
+        margin-top: 80px;
+    }
+    .shop-by-goals .shop-by-goals-title,
+    .section-title{
+        font-size: 20px;
+        color: var(--black);
+        font-family: 'Akira Expanded';
+    }
+    .section-title{
+        font-size: 22px;
+    }
+    .latest-deals-cards .owl-nav{
+        width: 114%;
+    }
+    .shop-by-category-cards .owl-nav{
+        width: 114%;
+    }
+
+    .sociale-media-links a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .top-center img{
+        width: 23px;
+        height: 23px;
+    }
+    .top-center p{
+        font-size: 12px;
+    }
+    .hero-img .hero-img-desc h1{
+        font-size: 28px;
+        margin-top: 110px;
+    }
+    .hero-img .hero-img-desc p{
+        font-size: 14px;
+    }
+    .shop-by-category-cards .owl-nav{
+        width: 115%;
+    }
+    .latest-deals-cards .owl-nav{
+        width: 115%;
+    }
+
+    .sociale-media-links a{
+        font-size: 12px;
+    }
+
+    .footer-links-title{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .hero-img{
+        height: 450px;
+    }
+    .hero-logo a span{
+        font-size: 24px;
+    }
+    .hero-navbar .btn img{
+        width: 25px;
+        height: 25px;
+    }
+    .hero-navbar .cart-shop-img img{
+        width: 25px;
+        height: 25px;
+    }
+    .hero-img .hero-img-desc h1{
+        font-size: 22px;
+        margin-top: 100px;
+    }
+    .hero-img .hero-img-desc p{
+        font-size: 12px;
+    }
+
+
+    .latest-deals-cards .owl-nav{
+        width: 119%;
+    }
+    .shop-by-category-cards .owl-nav{
+        width: 119%;
+    }
+
+
+
+    .latest-deals-card{
+        width: 340px;
+        overflow: hidden;
+        background-color: var(--card-grey);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    
+    .latest-deals-card .pourcentage{
+        color: var(--white);
+        background-color: var(--primary-orange);
+        font-family: 'teko';
+        font-size: 16px;
+        position: absolute;
+        top: 14px;
+        left: -35px;
+        padding: 5px 50px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+    }
+    
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-title{
+        color: var(--primary-orange);
+        font-family: 'Teko';
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    
+    .latest-deals-card .latest-deals-card-content .latest-deals-card-img{
+        width: 220px;
+        height: 220px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc{
+        color: var(--black-secondary); 
+        font-family: 'Teko';
+        font-size: 18px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-desc{
+        color: var(--black-secondary); 
+        font-family: 'Proxima Nova';
+        font-size: 18px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate{
+        font-size: 16px;
+        margin-top: -10px;
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .product-rate i{
+        color: var(--primary-orange);
+    }
+    .latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price{
+        font-size: 24px;
+    }
+    
+    .latest-deals-card-btn{
+        width: 90%;
+        bottom: -50px;
+        transition: all ease-in-out .2s;
+        -webkit-transition: all ease-in-out .2s;
+        -moz-transition: all ease-in-out .2s;
+        -ms-transition: all ease-in-out .2s;
+        -o-transition: all ease-in-out .2s;
+    }
+    
+    
+    .latest-deals-card :hover .latest-deals-card-btn{
+        bottom:  15px;
+    }
+    .latest-deals-card-btn button{
+        width: 100%;
+        color: var(--white);
+        background-color: var(--black);
+        font-family: 'Akira Expanded';
+        font-size: 14px;
+        font-weight: 200;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .latest-deals-card-btn button:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+
+
+
+    .latest-deals-card :hover .latest-deals-card-info{
+        cursor: pointer;
+        top: 20px;
+        right: 15px;
+    }
+    .latest-deals-card-info:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-info{
+        position: absolute;
+        top: 20px;
+        right: -50px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card:hover .latest-deals-card-like{
+        cursor: pointer;
+        top: 70px;
+        right: 15px;
+    }
+    .latest-deals-card-like:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-like{
+        position: absolute;
+        top: 70px;
+        right: -100px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .latest-deals-card :hover .latest-deals-card-eye{
+        cursor: pointer;
+        top: 120px;
+        right: 15px;
+    }
+    .latest-deals-card-eye:hover{
+        color: var(--white);
+        background-color: var(--primary-orange);
+    }
+    .latest-deals-card-eye{
+        position: absolute;
+        top: 120px;
+        right: -150px;
+        padding: 5px 10px;
+        font-size: 20px;
+        color: var(--white);
+        background-color: var(--black);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+
+
+
+    .top-center img{
+        width: 20px;
+        height: 20px;
+    }
+    .top-center p{
+        font-size: 10px;
+    }
+
+
+    .follow-us-content-desc h1{
+        font-size: 20px;
+    }
+    .follow-us-content-desc p{
+        width: 70%;
+        margin: auto;
+        font-size: 10px;
+    }
+    .sociale-media-links a{
+        font-size: 10px;
+    }
+
+
+    .footer-logo span{
+        font-size: 24px;
+    }
+    .footer-links-title{
+        font-size: 14px;
+    }
+    .footer-links-container a{
+        font-size: 12px;
+    }
+
+
+}
