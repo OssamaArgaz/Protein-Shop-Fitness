@@ -236,6 +236,51 @@ section{
 }
 
 
+    /* for offcanvas */
+.offcanvas-input-search{
+    width: 90%;
+}
+.offcanvas-input-search input{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+}
+.offcanvas-input-search input:focus{
+    border: 1px solid var(--primary-orange);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.offcanvas-input-search i{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+.offcanvas-input-search i:hover{
+    cursor: pointer;
+    color: var(--primary-orange);
+}
+.navbar-list li a{
+    font-family: 'Akira Expanded';
+    font-size: 12px;
+    font-weight: 700;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+.navbar-list li a:hover{
+    border-bottom: 1px solid var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+
 
 .hero-img{
     width: 100%;
@@ -1154,27 +1199,27 @@ section{
         -o-border-radius: 20px;
     }
     .shop-by-goals-card-card-1{
-        background-image: url(/assest/img/796.jpg);
+        background-image: url(../assest/img/796.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-2{
-        background-image: url(/assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
+        background-image: url(../assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-3{
-        background-image: url(/assest/img/296.jpg);
+        background-image: url(../assest/img/296.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-4{
-        background-image: url(/assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
+        background-image: url(../assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-5{
-        background-image: url(/assest/img/7352.jpg);
+        background-image: url(../assest/img/7352.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-6{
-        background-image: url(/assest/img/750.jpg);
+        background-image: url(../assest/img/750.jpg);
         background-size: cover;
     }
 
@@ -1925,27 +1970,27 @@ section{
         -o-border-radius: 20px;
     }
     .shop-by-goals-card-card-1{
-        background-image: url(/assest/img/796.jpg);
+        background-image: url(../assest/img/796.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-2{
-        background-image: url(/assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
+        background-image: url(../assest/img/jeune-bel-homme-exercant-au-gymnase-pour-la-musculation.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-3{
-        background-image: url(/assest/img/296.jpg);
+        background-image: url(../assest/img/296.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-4{
-        background-image: url(/assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
+        background-image: url(../assest/img/femme-brune-sportive-faisant-de-l-exercice-avec-une-corde-de-combat-brulante-dans-un-club-de-gym.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-5{
-        background-image: url(/assest/img/7352.jpg);
+        background-image: url(../assest/img/7352.jpg);
         background-size: cover;
     }
     .shop-by-goals-card-card-6{
-        background-image: url(/assest/img/750.jpg);
+        background-image: url(../assest/img/750.jpg);
         background-size: cover;
     }
 
