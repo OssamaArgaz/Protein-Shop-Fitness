@@ -288,11 +288,11 @@ section{
 }
      /* HERO END */
 
-    /* LOGIN PAGE START */
-.login-page{
+    /* sign-up PAGE START */
+.sign-up-page{
     background-color: var(--white);
 }
-.login-page-top{
+.sign-up-page-top{
     background-color: var(--primary-orange);
     font-family: 'Akira Expanded';
     font-size: 14px;
@@ -302,22 +302,22 @@ section{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
-.login-page-top a{
+.sign-up-page-top a{
     transition: all ease-in-out .4s;
     -webkit-transition: all ease-in-out .4s;
     -moz-transition: all ease-in-out .4s;
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.login-page-top a:hover{
+.sign-up-page-top a:hover{
     color: var(--white);
     border-bottom: 1px solid var(--white);
 }
-.login-page-top span{
+.sign-up-page-top span{
     color: var(--white);
 }
 
-.login-form form{
+.sign-up-form form{
     width: 60%;
     font-family: 'Teko';
     background-color: var(--white);
@@ -328,11 +328,11 @@ section{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
-.login-form-title{
+.sign-up-form-title{
     font-family: 'Akira Expanded';
     font-size: 36px;
 }
-.login-form input{
+.sign-up-form input{
     padding: 10px 15px;
     border: 1px solid var(--primary-orange);
     border-radius: 15px;
@@ -355,28 +355,31 @@ section{
 .remember input:hover{
     cursor: pointer;
 }
-.login-form-btn{
+.sign-up-form-btn{
+    border: 1px solid var(--black);
+    outline: none;
     padding: 5px 0;
-    background-color: var(--white);
-    border: 1px solid var(--primary-orange);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    transition: all ease-in-out .4s;
-    -webkit-transition: all ease-in-out .4s;
-    -moz-transition: all ease-in-out .4s;
-    -ms-transition: all ease-in-out .4s;
-    -o-transition: all ease-in-out .4s;
-}
-.login-form-btn:hover{
     color: var(--white);
     background-color: var(--primary-orange);
-    border: 1px solid var(--black);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.sign-up-form-btn:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--primary-orange);
+    outline: none;
 }
 
-.login-form-google-btn{
+.sign-up-form-google-btn{
     padding: 5px 0;
     background-color: var(--white);
     border: 1px solid var(--primary-orange);
@@ -391,22 +394,22 @@ section{
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.login-form-signup{
+.sign-up-form-signup{
     font-family: 'Proxima Nova';
     font-size: 14px;
 }
-.login-form-signup a{
+.sign-up-form-signup a{
     transition: all ease-in-out .4s;
     -webkit-transition: all ease-in-out .4s;
     -moz-transition: all ease-in-out .4s;
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.login-form-signup a:hover{
+.sign-up-form-signup a:hover{
     color: var(--primary-orange);
     border-bottom: 1px solid var(--primary-orange);
 }
-    /* LOGIN PAGE END */
+    /* sign-up PAGE END */
 
 
     /* FOOTER START  */
@@ -659,8 +662,8 @@ section{
         color: var(--primary-orange);
     }
 
-        /* LOGIN PAGE START */
-    .login-page-top{
+        /* sign-up PAGE START */
+    .sign-up-page-top{
         background-color: var(--primary-orange);
         font-family: 'Akira Expanded';
         font-size: 12px;
@@ -671,7 +674,7 @@ section{
         -o-border-radius: 25px;
     }
 
-    .login-form form{
+    .sign-up-form form{
         width: 80%;
         font-family: 'Teko';
         background-color: var(--white);
@@ -682,11 +685,11 @@ section{
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
     }
-    .login-form-title{
+    .sign-up-form-title{
         font-family: 'Akira Expanded';
         font-size: 32px;
     }
-    .login-form input{
+    .sign-up-form input{
         padding: 10px 15px;
         border: 1px solid var(--primary-orange);
         border-radius: 15px;
@@ -695,7 +698,7 @@ section{
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
     }
-        /* LOGIN PAGE END */
+        /* sign-up PAGE END */
 
 
         /* FOOTER START  */
@@ -963,7 +966,7 @@ section{
 }
 
 @media screen and (max-width: 426px){
-    .login-page-top{
+    .sign-up-page-top{
         background-color: var(--primary-orange);
         font-family: 'Akira Expanded';
         font-size: 10px;
@@ -974,7 +977,7 @@ section{
         -o-border-radius: 25px;
     }
 
-    .login-form form{
+    .sign-up-form form{
         width: 100%;
         font-family: 'Teko';
         background-color: var(--white);
@@ -985,11 +988,11 @@ section{
         -ms-border-radius: 25px;
         -o-border-radius: 25px;
     }
-    .login-form-title{
+    .sign-up-form-title{
         font-family: 'Akira Expanded';
         font-size: 28px;
     }
-    .login-form input{
+    .sign-up-form input{
         padding: 10px 15px;
         border: 1px solid var(--primary-orange);
         border-radius: 15px;
@@ -1017,14 +1020,14 @@ section{
 
 
 
-    .login-form-title{
+    .sign-up-form-title{
         font-family: 'Akira Expanded';
         font-size: 26px;
     }
-    .login-form label{
+    .sign-up-form label{
         font-size: 14px;
     }
-    .login-form input{
+    .sign-up-form input{
         font-size: 14px;
         padding: 10px 15px;
         border: 1px solid var(--primary-orange);
@@ -1042,29 +1045,31 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .login-form-btn{
+    .sign-up-form-btn{
+        border: 1px solid var(--black);
+        outline: none;
         font-size: 14px;
         padding: 5px 0;
-        background-color: var(--white);
-        border: 1px solid var(--primary-orange);
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        transition: all ease-in-out .4s;
-        -webkit-transition: all ease-in-out .4s;
-        -moz-transition: all ease-in-out .4s;
-        -ms-transition: all ease-in-out .4s;
-        -o-transition: all ease-in-out .4s;
-    }
-    .login-form-btn:hover{
         color: var(--white);
         background-color: var(--primary-orange);
-        border: 1px solid var(--black);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        transition: all ease-in-out .4s;
+        -webkit-transition: all ease-in-out .4s;
+        -moz-transition: all ease-in-out .4s;
+        -ms-transition: all ease-in-out .4s;
+        -o-transition: all ease-in-out .4s;
+    }
+    .sign-up-form-btn:hover{
+        background-color: var(--black);
+        border: 1px solid var(--primary-orange);
+        outline: none;
     }
 
-    .login-form-google-btn{
+    .sign-up-form-google-btn{
         font-size: 14px;
         padding: 5px 0;
         background-color: var(--white);
@@ -1080,22 +1085,22 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .login-form-google-btn svg{
+    .sign-up-form-google-btn svg{
         width: 15px;
         height: 15px;
     }
-    .login-form-signup{
+    .sign-up-form-signup{
         font-family: 'Proxima Nova';
         font-size: 12px;
     }
-    .login-form-signup a{
+    .sign-up-form-signup a{
         transition: all ease-in-out .4s;
         -webkit-transition: all ease-in-out .4s;
         -moz-transition: all ease-in-out .4s;
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .login-form-signup a:hover{
+    .sign-up-form-signup a:hover{
         color: var(--primary-orange);
         border-bottom: 1px solid var(--primary-orange);
     }

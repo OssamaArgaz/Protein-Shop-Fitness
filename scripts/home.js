@@ -60,11 +60,11 @@ latest_deals_cards.on('mouseout', function(){
 
 
 
-// latest-deals-card-info 
+// latest-deals-card-info
 document.addEventListener('DOMContentLoaded', function() {
   var popoverElements = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-  
-  popoverElements.map(function(popoverEl) {
+
+  popoverElements.map(function(popoverEl){
     return new bootstrap.Popover(popoverEl);
   });
 });
