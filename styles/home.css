@@ -98,7 +98,7 @@ body{
     cursor: pointer;
 }
 
-.section, 
+.section,
 section{
     padding: 0 50px;
 }
@@ -999,7 +999,6 @@ section{
         color: var(--white);
         background-color: var(--primary-orange);
         padding: 0 5px;
-        right: -10px;
         top: -4px;
         border-radius: 50px;
         -webkit-border-radius: 50px;

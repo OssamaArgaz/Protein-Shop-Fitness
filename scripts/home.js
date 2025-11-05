@@ -28,7 +28,7 @@ shop_by_category_cards.on('mouseout', function(){
 });
 
 
-var latest_deals_cards =$('.latest-deals-cards');
+var latest_deals_cards = $('.latest-deals-cards');
 
 latest_deals_cards.owlCarousel({
     loop:true,
