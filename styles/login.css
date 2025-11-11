@@ -291,6 +291,11 @@ section{
     /* LOGIN PAGE START */
 .login-page{
     background-color: var(--white);
+    border-radius: 0 0 50px 50px;
+    -webkit-border-radius: 0 0 50px 50px;
+    -moz-border-radius: 0 0 50px 50px;
+    -ms-border-radius: 0 0 50px 50px;
+    -o-border-radius: 0 0 50px 50px;
 }
 .login-page-top{
     background-color: var(--primary-orange);
@@ -321,7 +326,7 @@ section{
     width: 60%;
     font-family: 'Teko';
     background-color: var(--white);
-    box-shadow: 5px 5px 50px rgba(169, 169, 169, 0.594);
+    box-shadow: 5px 5px 50px var(--card-grey);
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -674,7 +679,7 @@ section{
         width: 80%;
         font-family: 'Teko';
         background-color: var(--white);
-        box-shadow: 5px 5px 50px rgba(169, 169, 169, 0.594);
+        box-shadow: 5px 5px 50px var(--card-grey);
         border-radius: 25px;
         -webkit-border-radius: 25px;
         -moz-border-radius: 25px;
@@ -977,7 +982,7 @@ section{
         width: 100%;
         font-family: 'Teko';
         background-color: var(--white);
-        box-shadow: 5px 5px 50px rgba(169, 169, 169, 0.594);
+        box-shadow: 5px 5px 50px var(--card-grey);
         border-radius: 25px;
         -webkit-border-radius: 25px;
         -moz-border-radius: 25px;
