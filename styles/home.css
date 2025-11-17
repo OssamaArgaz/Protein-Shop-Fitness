@@ -29,7 +29,8 @@
     --white: #ffffff;
     --black: #222;
     --black-secondary: rgba(0, 0, 0, 0.721);
-    --card-grey: rgba(169, 169, 169, 0.5);
+    --card-grey-1: rgba(169, 169, 169, 0.5);
+    --card-grey-2: rgba(228, 228, 228, 0.564);
 }
 
 *{
@@ -491,7 +492,7 @@ section{
 }
 .shop-by-category-card{
     width: 340px;
-    background-color: var(--card-grey);
+    background-color: var(--card-grey-2);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -596,7 +597,7 @@ section{
 .latest-deals-card{
     width: 340px;
     overflow: hidden;
-    background-color: var(--card-grey);
+    background-color: var(--card-grey-2);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -662,7 +663,7 @@ section{
 }
 
 
-.latest-deals-card :hover .latest-deals-card-btn{
+.latest-deals-card:hover .latest-deals-card-btn{
     bottom:  15px;
 }
 .latest-deals-card-btn button{
@@ -746,7 +747,7 @@ section{
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.latest-deals-card :hover .latest-deals-card-eye{
+.latest-deals-card:hover .latest-deals-card-eye{
     cursor: pointer;
     top: 120px;
     right: 15px;
