@@ -139,113 +139,724 @@
             </section>
 
 
+            <section class="section shop py-4 overflow-hidden">
+                <div class="shop-page-top py-lg-3 py-2 text-center">
+                    <p class="m-0 text-center"><a href="index.html">Home</a> <span>></span> Shop</p>
+                </div>
+
+
+                <div class="shop_container my-5 row">
+                    <div class="shop_left d-none d-lg-block col-lg-4 col-xl-3 pe-4">
+                        <div class="shop_sorting mb-4">
+                            <h6 class="shop_sorting_title">Sort by <span>price</span></h6>
+
+                            <div class="shop-sorting-range w-100 position-relative">
+                                <span class="slider_track h-100 position-absolute"></span>
+                                <input type="range" class="min_value w-100 position-absolute top-50" name="min_value" id="" min="100" max="10000" value="1200" oninput="slideMin()">
+                                <input type="range" class="max_value w-100 position-absolute top-50" name="max_value" id="" min="100" max="10000" value="9000" oninput="slideMax()">
+                                <div class="tooltipe min_tooltipe d-block position-absolute text-center"></div>
+                                <div class="tooltipe max_tooltipe d-block position-absolute text-center"></div>
+                            </div>
+                            <div class="input_box d-flex mt-3">
+                                <div class="min_box m-2 w-50">
+                                    <div class="input_wrap w-100 position-relative d-flex flex-wrap align-items-stretch">
+                                        <span class="input_addon d-flex align-items-center text-center h-100">$</span>
+                                        <input type="text" class="input_field min_input h-100" name="min_input" onchange="setMinInput()">
+                                    </div>
+                                </div>
+                                <div class="max_box m-2 w-50">
+                                    <div class="input_wrap w-100 position-relative d-flex flex-wrap align-items-stretch">
+                                        <span class="input_addon h-100 d-flex align-items-center text-center ">$</span>
+                                        <input type="text" class="input_field max_input h-100" name="max_input" onchange="setMaxInput()">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="sort_price_btn w-100 mt-2">Sort</button>
+                        </div>
+
+                        <div class="sort_by_categorie mb-4">
+                            <h6 class="sort_by_categorie_title">Sort by <span>category</span></h6>
+
+                            <div class="sort_by_categorie_content">
+                                <button class="sort_btn">Multivitamine</button>
+                                <button class="sort_btn">pre-workout</button>
+                                <button class="sort_btn">protein powder</button>
+                                <button class="sort_btn">Amino Acids</button>
+                                <button class="sort_btn">Creatine</button>
+                                <button class="sort_btn">Masse Gainers</button>
+                            </div>
+                        </div>
+
+                        <div class="sort_by_brand mb-4">
+                            <h6 class="sort_by_brand_title">Sort by <span>Brand</span></h6>
+
+                            <div class="sort_by_brand_content">
+                                <button class="sort_btn">KRIEGGER</button>
+                                <button class="sort_btn">OSTROVIT</button>
+                                <button class="sort_btn">BIO DELICE</button>
+                                <button class="sort_btn">RULE 1</button>
+                                <button class="sort_btn">DYMATIZE</button>
+                                <button class="sort_btn">MUNCHMATE</button>
+                            </div>
+                        </div>
+
+                        <div class="sort_by_size mb-4">
+                            <h6 class="sort_by_size_title">Sort by <span>Size</span></h6>
+
+                            <div class="sort_by_size_content">
+                                <button class="sort_btn">100g-250g</button>
+                                <button class="sort_btn">250g-500g</button>
+                                <button class="sort_btn">500g-750g</button>
+                                <button class="sort_btn">750g-1kg</button>
+                                <button class="sort_btn">30 Capsules</button>
+                                <button class="sort_btn">60 Capsules</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="shop_right col-12 col-lg-8 col-xl-9">
+                        <div class="shop_right_content row">
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Amino Acids</h4> <!-- 14 mots -->
+                                        <img class="product_card_img py-2" src="./assest/img/scitec_creatine_monohydrate_300g.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Masse Gainers</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/R.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">pre-workout</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/muscletech-premium-whey-plus-vainilla.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Creatine</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/muscletech-premium-whey-plus-vainilla.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">pre-workout</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/R.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Masse Gainers</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/scitec_creatine_monohydrate_300g.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Creatine</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/R.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Masse Gainers</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/muscletech-premium-whey-plus-vainilla.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="shop_right_product col-12 col-sm-6 col-lg-6 col-xl-4 mb-4">
+                                <div class="product_card p-1 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="product_card_content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="product_card_title mt-4 mb-4 mb-lg-2 text-center">Multivitamine</h4>
+                                        <img class="product_card_img py-2" src="./assest/img/muscletech-premium-whey-plus-vainilla.png" alt="">
+                                        <div class="card-desc w-100 py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="product_card_product-price">
+                                                <span class="dollar me-2">$</span><span class="product_card_product-price">72.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product_card_btn position-absolute d-none d-lg-block">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="product_card_info d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="product_card_like d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="product_card_eye d-none d-lg-block" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                        <div class="product_card_shooping d-none">
+                                            <i class="icofont-shopping-cart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <nav class="product_pagination w-100 m-0 py-4">
+                                <ul class="page_numbers p-0 m-0 d-flex justify-content-center align-items-center">
+                                    <li class="page_prev mx-2">
+                                        <a href="#"><i class="icofont-arrow-left"></i></a>
+                                    </li>
+                                    <li class="page_number page_number_focus mx-2">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="page_number mx-2">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="page_number mx-2">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="page_next mx-2">
+                                        <a href="#"><i class="icofont-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             <!-- FOOTER START -->
                 <footer class="section footer pt-5">
-            <div class="footer-container">
-                <div class="footer-container-top row">
-                    <div class="footer-logo col-12 col-sm-3">
-                        <a href="index.html"><span>FITNESS</span></a>
-                    </div>
-                    <div class="footer-links py-2 col-12 col-sm-9">
-                        <div class="footer-links-container py-2 pb-sm-2 row">
-                            <div class="footer-links-Catalogs col-6 py-2 col-sm-3 py-sm-0">
-                                <h6 class="footer-links-title">Catalogs</h6>
-                                <ul class="footer-links-Catalogs-list">
-                                    <li class="">
-                                        <a href="#">Protein</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Creatine</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Pre-workout</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Multivitamine</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Amino Acids</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Masse Gainers</a>
-                                    </li>
-                                </ul>
+                    <div class="footer-container">
+                        <div class="footer-container-top row">
+                            <div class="footer-logo col-12 col-sm-3">
+                                <a href="index.html"><span>FITNESS</span></a>
                             </div>
-                            <div class="footer-links-about col-6 py-2 col-sm-3 py-sm-0">
-                                <h6 class="footer-links-title">About us</h6>
-                                <ul class="footer-links-about-list">
-                                    <li class="">
-                                        <a href="#">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Help</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-links-quick-links col-6 py-2 col-sm-3 py-sm-0">
-                                <h6 class="footer-links-title">Quick links</h6>
-                                <ul class="footer-links-quick-links-list">
-                                    <li class="">
-                                        <a href="#">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Wishlist</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">My orders</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-links-customer col-6 py-2 col-sm-3 py-sm-0">
-                                <h6 class="footer-links-title">Customer Service</h6>
-                                <ul class="footer-links-customer-service-list">
-                                    <li class="">
-                                        <a href="login.html">My account</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Wishlist</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">My orders</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Return Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="login.html">Connexion</a>
-                                    </li>
-                                </ul>
+                            <div class="footer-links py-2 col-12 col-sm-9">
+                                <div class="footer-links-container py-2 pb-sm-2 row">
+                                    <div class="footer-links-Catalogs col-6 py-2 col-sm-3 py-sm-0">
+                                        <h6 class="footer-links-title">Catalogs</h6>
+                                        <ul class="footer-links-Catalogs-list">
+                                            <li class="">
+                                                <a href="#">Protein</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Creatine</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pre-workout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Multivitamine</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Amino Acids</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Masse Gainers</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links-about col-6 py-2 col-sm-3 py-sm-0">
+                                        <h6 class="footer-links-title">About us</h6>
+                                        <ul class="footer-links-about-list">
+                                            <li class="">
+                                                <a href="#">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Help</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links-quick-links col-6 py-2 col-sm-3 py-sm-0">
+                                        <h6 class="footer-links-title">Quick links</h6>
+                                        <ul class="footer-links-quick-links-list">
+                                            <li class="">
+                                                <a href="#">Shop</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-links-customer col-6 py-2 col-sm-3 py-sm-0">
+                                        <h6 class="footer-links-title">Customer Service</h6>
+                                        <ul class="footer-links-customer-service-list">
+                                            <li class="">
+                                                <a href="login.html">My account</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Wishlist</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Return Policy</a>
+                                            </li>
+                                            <li>
+                                                <a href="login.html">Connexion</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="footer-copy-right col-12 pt-4 text-center">
+                            <p class="">Copyright © 2024 <a href="https://github.com/OssamaArgaz" target="_blank">Ossama Argaz</a>. All rights reserved</p>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-copy-right col-12 pt-4 text-center">
-                    <p class="">Copyright © 2024 <a href="https://github.com/OssamaArgaz" target="_blank">Ossama Argaz</a>. All rights reserved</p>
-                </div>
-            </div>
                 </footer>
-            <!-- FOOTER START -->
-             
+            <!--<FOOTER START -->
+
         </article>
     </main>
 
@@ -260,5 +871,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+
+    <script src="scripts/shop.js"></script>
 </body>
 </html>

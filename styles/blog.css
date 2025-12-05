@@ -227,10 +227,20 @@ section{
 }
 
 .input-search input{
+    font-family: 'teko';
+    font-size: 14px;
     padding: 8px 15px;
     outline: none;
     border: none;
     border-right: 2px solid var(--primary-orange);
+}
+.input-search input:focus{
+    border: 1px solid var(--primary-orange);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .input-search i{
     color: var(--black);

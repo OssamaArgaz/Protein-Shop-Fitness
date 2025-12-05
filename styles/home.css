@@ -218,10 +218,20 @@ section{
 }
 
 .input-search input{
+    font-family: 'teko';
+    font-size: 14px;
     padding: 8px 15px;
     outline: none;
     border: none;
     border-right: 2px solid var(--primary-orange);
+}
+.input-search input:focus{
+    border: 1px solid var(--primary-orange);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .input-search i{
     color: var(--black);
@@ -689,6 +699,10 @@ section{
     background-color: var(--primary-orange);
 }
 
+
+.popover-header{
+    font-family: 'Proxima Nova' !important;
+}
 
 
 .latest-deals-card:hover .latest-deals-card-info{
@@ -1318,7 +1332,7 @@ section{
         background-color: var(--primary-orange) !important;
     }
     .shop-by-category-card{
-        background-color: var(--card-grey);
+        background-color: var(--card-grey-2);
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -1422,7 +1436,7 @@ section{
 
     .latest-deals-card{
         overflow: hidden;
-        background-color: var(--card-grey);
+        background-color: var(--card-grey-2);
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -2089,7 +2103,7 @@ section{
         background-color: var(--primary-orange) !important;
     }
     .shop-by-category-card{
-        background-color: var(--card-grey);
+        background-color: var(--card-grey-2);
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -2193,7 +2207,7 @@ section{
 
     .latest-deals-card{
         overflow: hidden;
-        background-color: var(--card-grey);
+        background-color: var(--card-grey-2);
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -2604,7 +2618,7 @@ section{
     .latest-deals-card{
         width: 340px;
         overflow: hidden;
-        background-color: var(--card-grey);
+        background-color: var(--card-grey-2);
         border-radius: 20px;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
