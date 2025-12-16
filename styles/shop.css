@@ -359,6 +359,9 @@ section{
 .slider_track{
     background-color: var(--primary-orange);
 }
+.responsiveSlider_track{
+    background-color: var(--primary-orange);
+}
 .shop-sorting-range input{
     background: none;
     transform: translateY(-50%);
@@ -468,6 +471,25 @@ input[type="range"]::-ms-thumb {
     -o-transform: translateX(36%) translateY(-100%);
 }
 
+.responsiveMin_tooltipe{
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    -moz-transform: translateX(-50%) translateY(-100%);
+    -ms-transform: translateX(-50%) translateY(-100%);
+    -o-transform: translateX(-50%) translateY(-100%);
+}
+
+.responsiveMax_tooltipe{
+    right: 50%;
+    transform: translateX(36%) translateY(-100%);
+    -webkit-transform: translateX(36%) translateY(-100%);
+    -moz-transform: translateX(36%) translateY(-100%);
+    -ms-transform: translateX(36%) translateY(-100%);
+    -o-transform: translateX(36%) translateY(-100%);
+}
+
 .input_wrap{
     height: 40px;
 }
@@ -538,12 +560,33 @@ input[type="range"]::-ms-thumb {
 }
 
 
+.sort_info_btn{
+    width: auto;
+    left: 0 ;
+}
+.sort_info_btn .btn{
+    font-size: 18px;
+    background-color: var(--primary-orange);
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.sort_info_title{
+    font-size: 16px;
+    font-family: 'teko';
+}
+
 
 .sort_btn{
     font-family: 'teko';
     font-size: 14px;
     margin-left: 5px;
-    margin-top: 5px;
+    margin-top: 8px;
     padding: 5px 8px;
     color: var(--black);
     background-color: var(--white);
@@ -564,6 +607,20 @@ input[type="range"]::-ms-thumb {
     color: var(--white);
     background-color: var(--primary-orange);
     border: 1px solid var(--black);
+}
+
+.sort_btn span{
+    top: -5px;
+    left: -5px;
+    padding: 2px;
+    background-color: var(--primary-orange);
+    color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -1412,6 +1469,9 @@ input[type="range"]::-ms-thumb {
         font-size: 12px;
     }
 
+    .sort_info_title{
+        font-size: 14px;
+    }
 
     .product_pagination .page_numbers li{
         width: 35px;
