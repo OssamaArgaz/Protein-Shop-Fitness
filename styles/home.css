@@ -494,7 +494,7 @@ section{
     margin-top: 20px;
 }
 .shop-by-category-cards .owl-dots .owl-dot span{
-    background-color: var(--card-grey) !important;
+    background-color: var(--card-grey-1) !important;
     padding: 6px !important;
 }
 .shop-by-category-cards .owl-dot.active span{
@@ -596,7 +596,7 @@ section{
     margin-top: 20px ;
 }
 .latest-deals-cards .owl-dots .owl-dot span{
-    background-color: var(--card-grey) !important;
+    background-color: var(--card-grey-1) !important;
     padding: 6px !important;
     margin-top: 20px;
 }
@@ -1325,7 +1325,7 @@ section{
         margin-top: 20px;
     }
     .shop-by-category-cards .owl-dots .owl-dot span{
-        background-color: var(--card-grey) !important;
+        background-color: var(--card-grey-1) !important;
         padding: 6px !important;
     }
     .shop-by-category-cards .owl-dot.active span{
@@ -1426,7 +1426,7 @@ section{
         margin-top: 20px ;
     }
     .latest-deals-cards .owl-dots .owl-dot span{
-        background-color: var(--card-grey) !important;
+        background-color: var(--card-grey-1) !important;
         padding: 6px !important;
         margin-top: 20px;
     }
@@ -2096,7 +2096,7 @@ section{
         margin-top: 20px;
     }
     .shop-by-category-cards .owl-dots .owl-dot span{
-        background-color: var(--card-grey) !important;
+        background-color: var(--card-grey-1) !important;
         padding: 6px !important;
     }
     .shop-by-category-cards .owl-dot.active span{
@@ -2197,7 +2197,7 @@ section{
         margin-top: 20px ;
     }
     .latest-deals-cards .owl-dots .owl-dot span{
-        background-color: var(--card-grey) !important;
+        background-color: var(--card-grey-1) !important;
         padding: 6px !important;
         margin-top: 20px;
     }
@@ -2606,6 +2606,17 @@ section{
     }
 
 
+
+
+    .top-center img{
+        width: 20px;
+        height: 20px;
+    }
+    .top-center p{
+        font-size: 10px;
+    }
+
+
     .latest-deals-cards .owl-nav{
         width: 119%;
     }
@@ -2797,17 +2808,6 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-
-
-
-    .top-center img{
-        width: 20px;
-        height: 20px;
-    }
-    .top-center p{
-        font-size: 10px;
-    }
-
 
     .follow-us-content-desc h1{
         font-size: 20px;

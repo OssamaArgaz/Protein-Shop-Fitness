@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <link rel="stylesheet" href="styles/product.css">
+
+
+    <title>Product</title>
+</head>
+<body>
+    
+    <header class="header container-fluid">
+        <div class="top-page px-4 d-flex justify-content-center justify-content-md-between align-items-center">
+            <div class="top-left py-2 d-md-block align-items-center d-none">
+                <i class="icofont-phone"></i>
+                <a href="tel:+212681872061" class="ms-1">+2126 81 87 20 61</a>
+            </div>
+            <div class="top-center d-flex justify-content-center align-items-center">
+                <img src="./assest/img/shipping-fast-solid-svgrepo-com.svg" alt="">
+                <p class="ms-3 mt-3">FREE SHIPPING MOST ORDERS OVER $99</p>
+            </div>
+            <div class="top-right d-md-block d-none">
+                <select class="p-1" name="" id="">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Arabe">Arabe</option>
+                </select>
+                <select class="p-1" name="" id="">
+                    <option value="USD">$USD</option>
+                    <option value="EUR">€USD</option>
+                    <option value="MAD">MAD</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    
+    <main class="w-100">
+        <article class="w-100">
+            <section class="section hero w-100">
+                <!-- default navbar START -->
+                <div class="hero-navbar w-100 pt-4 d-lg-flex justify-content-lg-between align-items-lg-center d-none">
+                    <div class="hero-logo">
+                        <a href="#"><span>FITNESS</span></a>
+                    </div>
+                    <nav class="navbar d-flex align-items-center">
+                        <ul class="navbar-list w-100 px-5 mt-3 d-flex justify-content-between align-items-center">
+                            <li class="">
+                                <a class="" href="#">Home</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="shop.html">Shop</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="blog.html">Blog</a>
+                            </li>
+                            <li class="">
+                                <a class="" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hero-navbar-right d-flex justify-content-center align-items-center">
+                        <div class="input-search me-4 position-relative">
+                            <input class="" type="text" placeholder="Search Product">
+                            <i class="icofont-search"></i>
+                        </div>
+                        <a href="login.html"><i class="icofont-user me-4"></i></a>
+                        <div class="favoris-icon position-relative">
+                            <span class="position-absolute">0</span>
+                            <a href="#"><i class="icofont-ui-love me-4"></i></a>
+                        </div>
+                        <div class="cart-shop-img me-4 position-relative">
+                            <span class="position-absolute">0</span>
+                            <a href="#"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- default navbar END -->
+
+                <!-- navbar for responsive START -->
+                <div class="hero-navbar-responsive hero-navbar pt-4 d-lg-none d-flex justify-content-between align-items-center">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <img src="./assest/img/menu.png" width="30px" height="30px" alt="">
+                    </button>
+                    <div class="hero-logo-responsive">
+                        <a href="#"><span>FITNESS</span></a>
+                    </div>
+                    <div class="hero-navbar-right-responsive d-flex justify-content-center align-items-center">
+                        <div class="cart-shop-img position-relative">
+                            <span class="position-absolute">0</span>
+                            <a href="#"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- navbar for responsive END -->
+
+                <!-- offcanvas navbar for responsive START -->
+                <div class="offcanvas offcanvas-start py-4" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="text-center hero-logo-responsive">
+                        <a href="#"><span>FITNESS</span></a>
+                    </div>
+                    <div class="offcanvas-search w-100 pt-4 d-flex justify-content-center">
+                        <div class="offcanvas-input-search position-relative">
+                            <input class="w-100" type="text" placeholder="Search Product">
+                            <i class="icofont-search"></i>
+                        </div>
+                    </div>
+                    <nav class="hero-navbar-responsive offcanvas-navbar">
+                        <ul class="navbar-list mt-3 d-flex flex-column">
+                            <li class="mt-4">
+                                <a class="mt-4" href="#">Home</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="mt-4" href="shop.html">Shop</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="mt-4" href="blog.html">Blog</a>
+                            </li>
+                            <li class="mt-4">
+                                <a class="mt-4" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- offcanvas navbar for responsive END -->
+            </section>
+
+                <!-- PRODUCT START -->
+            <section class="section product pt-4 w-100">
+                <div class="product-page-top py-lg-3 py-2 text-center w-100">
+                    <p class="m-0 text-center"><a href="index.html">Home</a> <span>></span> Product</p>
+                </div>
+
+                <div class="product-container w-100 m-0 pt-4 pt-md-5 row">
+                    <div class="product-left col-12 col-lg-5">
+                        <div class="product-card p-4 position-relative d-flex">
+                            <img src="./assest/img/scitec_creatine_monohydrate_300g.png" class="w-100 h-100" alt="" srcset="">
+                            <div class="product-card-lyr position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
+                                <div class="product_card_like">
+                                    <i class="icofont-ui-love"></i>
+                                </div>
+                                <div class="product_card_eye">
+                                    <i class="icofont-eye-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-right col-12 col-lg-7 px-4 pt-4 pt-sm-5 py-lg-2">
+                        <div class="product-right-content">
+                            <h6 class="product-categorie">Protein Powder</h6>
+                            <h4 class="product-title">creatine monohydrate <span>300g</span> Scitec Nutrition</h4>
+                            <p class="product-desc m-0">Cette Whey fournit 25 g de protéines, 5,5 g de BCAA et 4,4 g de glutamine, et bien qu'il ne dépasse pas 1 g de sucre, il peut sembler sucré grâce au sucralose et aux arômes.</p>
+                            <div class="product-price m-0 d-flex align-items-center">
+                                <span>$<span class="new-price ms-1">40.50</span><s class="old-price ms-2">$ 162.00</s></span>
+                            </div>
+                            <div class="product-rate mt-1">
+                                <span><i class="icofont-star"></i></span>
+                                <span><i class="icofont-star"></i></span>
+                                <span><i class="icofont-star"></i></span>
+                                <span><i class="icofont-star"></i></span>
+                                <span><i class="icofont-star"></i></span>
+                                <span class="star-number ms-1">(5)</span>
+                            </div>
+                            <div class="product-info d-flex flex-wrap align-items-center">
+                                <span class="in-stock me-2 mt-2">in stock</span>
+                                <span class="not-stock me-2 mt-2 d-none">rupture de stock</span>
+                                <div class="product-pourcentage me-2 mt-2">
+                                    <span>25%</span>
+                                </div>
+                                <div class="product-flavour me-2 mt-2 d-flex justify-content-center align-items-center">
+                                    <span>Unflavored</span>
+                                </div>
+                                <div class="product-mass me-2 mt-2 d-flex justify-content-center align-items-center">
+                                    <span>300g</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="product-buttons w-100 mt-3 d-flex">
+                                        <button class="add-product-count">
+                                            <i class="icofont-minus-circle"></i>
+                                            <span class="mx-4">1</span>
+                                            <i class="icofont-plus-circle"></i>
+                                        </button>
+                                        <button class="add-product ms-2">Add to carte</button>
+                                    </div>
+                                    <button class="buy-product-btn w-100 mt-2">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details col-12 mt-5">
+                        <div class="product-details-desc">
+                            <h4 class="product-details-title">Descrition</h4>
+                            <div class="paragraphes desc-paragraphes mt-2 mt-lg-4">
+                                <ul>
+                                    <li>
+                                        <p>Il a été scientifiquement prouvé qu’une consommation quotidienne de créatine de minimum 3 g améliore les performances physiques lors d’exercices successifs, courts et de haute intensité.</p>
+                                    </li>
+                                    <li>
+                                        <p>La créatine. La créatine permet une augmentation des taux de phosphocréatine dans les cellules ce qui augmente la formation d’adénosine triphosphate (ATP), ce qui booste votre énergie et donc une amélioration de la force et la performance musculaire.</p>
+                                    </li>
+                                    <li>
+                                        <p>En retenant l’eau dans les cellules, la créatine de Scitec Nutrition provoque une congestion musculaire qui améliore la distribution des nutriments dans les muscles : plus de force, plus de volume, plus de résistance, plus de résultats.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="w-75 m-auto my-4">
+
+                        <div class="product-details-utilisation">
+                            <h4 class="product-details-title">Utilisation recommande</h4>
+                            <div class="paragraphes utilisation-paragraphes mt-2 mt-lg-4">
+                                <ul>
+                                    <li>
+                                        <p>Prendre une dose de 3,4g de 100% créatine par jour dans 300ml d’une boisson de votre choix.</p>
+                                    </li>
+                                    <li>
+                                        <p>Utiliser à jeun, principalement après l’entrainement.</p>
+                                    </li>
+                                    <li>
+                                        <p>Remarque:  Ce produit peut présenter une agglomération de la poudre, la rendant parfois plus compacte ou dure. Ce phénomène est courant avec des produits de haute qualité, car ils contiennent peu ou pas d’additifs chimiques tels que les agents anti-agglomérants ou antiadhésifs. Cela n’affecte en rien la qualité ou l’efficacité des ingrédients.</p>
+                                    </li>
+                                    <li>
+                                        <p>Au contraire, de nombreux fabricants soucieux de proposer des formules pures choisissent volontairement de ne pas ajouter ces substances. L’apparition de grumeaux ou d’un bloc solide est donc simplement liée à la nature des ingrédients.</p>
+                                    </li>
+                                    <li>
+                                        <p>Il est possible de le rétablir  en secouant énergiquement le contenant ou en mixant avec un mixeur  pour lui redonner sa forme initiale.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="w-75 m-auto my-4">
+
+                        <div class="product-details-conseil">
+                            <h4 class="product-details-title">Avertissements et Conseils</h4>
+                            <div class="paragraphes conseil-paragraphes mt-2 mt-lg-4">
+                                <ul>
+                                    <li>
+                                        <p>Destiné uniquement pour les adultes</p>
+                                    </li>
+                                    <li>
+                                        <p>ne pas dépasser la dose recommandé</p>
+                                    </li>
+                                    <li>
+                                        <p>Si vous êtes enceinte, allaitez, prenez des médicaments ou souffrez d’une maladie chronique, il est préférable de consulter votre médecin avant l’utilisation.</p>
+                                    </li>
+                                    <li>
+                                        <p>Arrêtez votre utilisation si vous présentez des symptômes allergiques (par exemple, démangeaisons, éruption cutanée, gonflement).</p>
+                                    </li>
+                                </ul>                                
+                            </div>
+                        </div>
+
+                        <hr class="w-75 m-auto my-4">
+
+                        <div class="related-product w-100">
+                            <h4 class="product-details-title">Produits associes</h4>
+                            <div class="related-product-cards owl-carousel owl-theme pt-4">
+                                <div class="item related-product-card w-100 p-2 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="related-product-card-content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="related-product-card-title py-2 text-center">Creatine</h4>
+                                        <img class="related-product-card-img" src="./assest/img/scitec_creatine_monohydrate_300g.png" alt="">
+                                        <div class="card-desc py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="related-product-card-product-price mt-2">
+                                                <span>$<span class="new-price ms-1">40.50</span><s class="old-price ms-2">$ 162.00</s></span>
+                                            </div>
+                                        </div>
+                                        <div class="related-product-card-btn position-absolute">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="related-product-card-info" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="related-product-card-like" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="related-product-card-eye" 
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item related-product-card w-100 p-2 position-relative">
+                                    <div class="pourcentage text-center">
+                                        <span>25%</span>
+                                    </div>
+                                    <div class="related-product-card-content d-flex flex-column justify-content-center align-items-center">
+                                        <h4 class="related-product-card-title py-2 text-center">Creatine</h4>
+                                        <img class="related-product-card-img" src="./assest/img/R.png" alt="">
+                                        <div class="card-desc py-2 px-3 d-flex flex-column justify-content-start align-items-start">
+                                            <p class="product-desc">creatine monohydrate 300g Scitec Nutrition</p>
+                                            <div class="product-rate">
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span><i class="icofont-star"></i></span>
+                                                <span class="ms-1">(5)</span>
+                                            </div>
+                                            <div class="related-product-card-product-price mt-2 mt-lg-1">
+                                                <span>$<span class="new-price ms-1">40.50</span><s class="old-price ms-2">$ 162.00</s></span>
+                                            </div>
+                                        </div>
+                                        <div class="related-product-card-btn position-absolute">
+                                            <button class="btn my-2">Add to cart</button>
+                                        </div>
+                                        <div class="related-product-card-info"
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Information"
+                                            data-bs-content="Créatine Monohydrate 300g . Performance & Récupération | + 💪 Force | + Puissance 🚀 | + Récupération 🧠.">
+                                            <i class="icofont-info-circle"></i>
+                                        </div>
+                                        <div class="related-product-card-like"
+                                            data-bs-toggle="popover" 
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Add to wishlist."
+                                            data-bs-content="">
+                                            <i class="icofont-ui-love"></i>
+                                        </div>
+                                        <div class="related-product-card-eye"
+                                            data-bs-toggle="popover"
+                                            data-bs-trigger="hover"
+                                            data-bs-placement="left"
+                                            title="Quick view"
+                                            data-bs-content="">
+                                            <i class="icofont-eye-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <!-- PRODUCT END -->
+
+                <!-- BADGES START -->
+            <section class="section badges py-4 py-sm-5">
+                <div class="badges-container row">
+                    <div class="badges-shipping py-sm-0 col-sm-4 col-12 py-2 d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assest/img/shipping-fast-solid-svgrepo-com.png" alt="">
+                        <div class="badges-shipping-desc pt-2 text-center">
+                            <h4>FREE SHIPPING </br> MOST ORDERS OVER $99</h4>
+                            <p>Imagine a world where your purchase grows as you order it—ready and delivered in under 48 hours.</p>
+                        </div>
+                    </div>
+                    <div class="badges-payment col-12 py-2 py-sm-0 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                        <i class="icofont-credit-card"></i>
+                        <div class="badges-payment-desc text-center pt-2">
+                            <h4>Paiement sécurisé</h4>
+                            <p>Pay safely by card, and we'll prepare your shipment as soon as your order is received.</p>
+                        </div>
+                    </div>
+                    <div class="badges-service col-12 py-2 py-sm-0 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                        <i class="icofont-ui-head-phone"></i>
+                        <div class="badges-service-desc text-center pt-2">
+                            <h4>Expert Customer Service</h4>
+                            <p>24/7 expert support to ensure smooth shopping—fast responses, easy returns, and hassle-free solutions for every need.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <!-- BADGES START -->
+
+                <!-- FOOTER START -->
+            <footer class="section footer pt-5">
+                <div class="footer-container">
+                    <div class="footer-container-top row">
+                        <div class="footer-logo col-12 col-sm-3">
+                            <a href="#"><span>FITNESS</span></a>
+                        </div>
+                        <div class="footer-links py-2 col-12 col-sm-9">
+                            <div class="footer-links-container py-2 pb-sm-2 row">
+                                <div class="footer-links-Catalogs col-6 py-2 col-sm-3 py-sm-0">
+                                    <h6 class="footer-links-title">Catalogs</h6>
+                                    <ul class="footer-links-Catalogs-list">
+                                        <li class="">
+                                            <a href="#">Protein</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Creatine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pre-workout</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Multivitamine</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Amino Acids</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Masse Gainers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-links-about col-6 py-2 col-sm-3 py-sm-0">
+                                    <h6 class="footer-links-title">About us</h6>
+                                    <ul class="footer-links-about-list">
+                                        <li class="">
+                                            <a href="#">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Help</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-links-quick-links col-6 py-2 col-sm-3 py-sm-0">
+                                    <h6 class="footer-links-title">Quick links</h6>
+                                    <ul class="footer-links-quick-links-list">
+                                        <li class="">
+                                            <a href="#">Shop</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wishlist</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-links-customer col-6 py-2 col-sm-3 py-sm-0">
+                                    <h6 class="footer-links-title">Customer Service</h6>
+                                    <ul class="footer-links-customer-service-list">
+                                        <li class="">
+                                            <a href="login.html">My account</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wishlist</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My orders</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Return Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html">Connexion</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copy-right col-12 pt-4 text-center">
+                        <p class="">Copyright © 2024 <a href="https://github.com/OssamaArgaz" target="_blank">Ossama Argaz</a>. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+                <!-- FOOTER START -->
+        </article>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="/scripts/product.js"></script>
+</body>
+</html>

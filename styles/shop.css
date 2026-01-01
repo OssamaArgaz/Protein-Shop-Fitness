@@ -1368,7 +1368,16 @@ input[type="range"]::-ms-thumb {
 
 
 
-
+    .shop-page-top{
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 12px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
 
 
 
@@ -1460,6 +1469,17 @@ input[type="range"]::-ms-thumb {
     }
     .top-center p{
         font-size: 12px;
+    }
+
+    .shop-page-top{
+        background-color: var(--primary-orange);
+        font-family: 'Akira Expanded';
+        font-size: 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
     }
 
     .sort_info_title{
