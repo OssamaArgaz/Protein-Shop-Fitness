@@ -17,6 +17,9 @@ shop_by_category_cards.owlCarousel({
         },
         992:{
             items:3
+        },
+        1150:{
+            items:4
         }
     }
 });
@@ -47,6 +50,9 @@ latest_deals_cards.owlCarousel({
         },
         992:{
             items:3
+        },
+        1150:{
+            items:4
         }
     }
 });

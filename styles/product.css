@@ -675,9 +675,7 @@ section{
 }
 .related-product-card .related-product-card-content .card-desc .product-desc,
 .recent-product-card .recent-product-card-content .card-desc .product-desc{
-    color: var(--black-secondary); 
     font-family: 'Proxima Nova';
-    font-size: 16px;
 }
 .related-product-card .related-product-card-content .card-desc .product-rate,
 .recent-product-card .recent-product-card-content .card-desc .product-rate{

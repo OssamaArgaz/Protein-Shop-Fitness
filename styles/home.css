@@ -408,20 +408,20 @@ section{
 .shop-by-goals-card-title h2{
     color: var(--white);
     font-family: 'Teko';
-    font-size: 36px;
+    font-size: 28px;
 }
 .shop-by-goals-card-title span{
     font-family: 'Proxima Nova';
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
-    color: rgba(250, 250, 250, 0.783);
+    color: rgba(250, 250, 250, 0.689);
 }
 
 .shop-by-goals-card-btn{
     color: var(--white);
     background-color: var(--primary-orange);
     font-family: 'Akira Expanded';
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px 35px;
     border: 1.4px solid var(--white);
     border-radius: 35px;
@@ -501,7 +501,6 @@ section{
     background-color: var(--primary-orange) !important;
 }
 .shop-by-category-card{
-    width: 340px;
     background-color: var(--card-grey-2);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -512,17 +511,17 @@ section{
 .shop-by-category-card-title{
     color: var(--primary-orange);
     font-family: 'Teko';
-    font-size: 34px;
+    font-size: 28px;
 }
 .shop-by-category-card img{
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 .shop-by-category-card-btn{ 
     color: var(--white);
     background-color: var(--primary-orange);
     font-family: 'Akira Expanded';
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 35px;
     border: 1.4px solid var(--white);
     border-radius: 35px;
@@ -576,7 +575,7 @@ section{
 .latest-deals-cards .owl-nav .owl-prev i,
 .latest-deals-cards .owl-nav .owl-next i{
     padding: 12px !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
     background-color: var(--primary-orange) !important;
     color: var(--white);
     transition: 0.4s;
@@ -605,7 +604,7 @@ section{
 }
 
 .latest-deals-card{
-    width: 340px;
+    cursor: pointer;
     overflow: hidden;
     background-color: var(--card-grey-2);
     border-radius: 20px;
@@ -619,7 +618,7 @@ section{
     color: var(--white);
     background-color: var(--primary-orange);
     font-family: 'teko';
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     top: 14px;
     left: -35px;
@@ -634,32 +633,35 @@ section{
 .latest-deals-card .latest-deals-card-content .latest-deals-card-title{
     color: var(--primary-orange);
     font-family: 'Teko';
-    font-size: 34px;
+    font-size: 28px;
 }
 
 .latest-deals-card .latest-deals-card-content .latest-deals-card-img{
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 150px;
 }
 .latest-deals-card .latest-deals-card-content .card-desc{
     color: var(--black-secondary); 
     font-family: 'Teko';
-    font-size: 18px;
+    font-size: 16px;
 }
 .latest-deals-card .latest-deals-card-content .card-desc .product-desc{
-    color: var(--black-secondary); 
     font-family: 'Proxima Nova';
-    font-size: 18px;
 }
 .latest-deals-card .latest-deals-card-content .card-desc .product-rate{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: -10px;
 }
 .latest-deals-card .latest-deals-card-content .card-desc .product-rate i{
     color: var(--primary-orange);
 }
 .latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price{
-    font-size: 24px;
+    font-size: 18px;
+    color: var(--primary-orange);
+}
+.latest-deals-card .latest-deals-card-content .card-desc .latest-deals-card-product-price .old-price{    
+    font-size: 14px;
+    color: var(--black-secondary);
 }
 
 .latest-deals-card-btn{
@@ -681,7 +683,7 @@ section{
     color: var(--white);
     background-color: var(--black);
     font-family: 'Akira Expanded';
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 200;
     transition: all ease-in-out .4s;
     -webkit-transition: all ease-in-out .4s;
@@ -719,7 +721,7 @@ section{
     top: 20px;
     right: -50px;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white);
     background-color: var(--black);
     border-radius: 50%;
@@ -747,7 +749,7 @@ section{
     top: 70px;
     right: -100px;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white);
     background-color: var(--black);
     border-radius: 50%;
@@ -775,7 +777,7 @@ section{
     top: 120px;
     right: -150px;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--white);
     background-color: var(--black);
     border-radius: 50%;
