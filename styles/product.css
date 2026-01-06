@@ -556,7 +556,8 @@ section{
 
 
 
-.related-product-cards .owl-nav{
+.related-product-cards .owl-nav,
+.recent-product-cards .owl-nav{
     width: 104.5%;
     position: absolute;
     top: 40%;
@@ -565,7 +566,9 @@ section{
     justify-content: space-between;
 }
 .related-product-cards .owl-nav .owl-prev ,
-.related-product-cards .owl-nav .owl-next {
+.related-product-cards .owl-nav .owl-next ,
+.recent-product-cards .owl-nav .owl-prev ,
+.recent-product-cards .owl-nav .owl-next {
     background-color: #f14b23;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -574,7 +577,9 @@ section{
     -o-border-radius: 50%;
 }
 .related-product-cards .owl-nav .owl-prev:hover ,
-.related-product-cards .owl-nav .owl-next:hover{
+.related-product-cards .owl-nav .owl-next:hover,
+.recent-product-cards .owl-nav .owl-prev:hover ,
+.recent-product-cards .owl-nav .owl-next:hover{
     background-color: transparent;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -584,7 +589,9 @@ section{
 }
 
 .related-product-cards .owl-nav .owl-prev i,
-.related-product-cards .owl-nav .owl-next i{
+.related-product-cards .owl-nav .owl-next i,
+.recent-product-cards .owl-nav .owl-prev i,
+.recent-product-cards .owl-nav .owl-next i{
     padding: 12px !important;
     font-size: 18px !important;
     background-color: var(--primary-orange) !important;
@@ -597,24 +604,30 @@ section{
     -o-border-radius: 50px;
 }
 .related-product-cards .owl-nav .owl-prev i:hover,
-.related-product-cards .owl-nav .owl-next i:hover{
+.related-product-cards .owl-nav .owl-next i:hover,
+.recent-product-cards .owl-nav .owl-prev i:hover,
+.recent-product-cards .owl-nav .owl-next i:hover{
     background-color: var(--white) !important;
     color: var(--primary-orange);
 }
-.related-product-cards .owl-dots{
+.related-product-cards .owl-dots,
+.recent-product-cards .owl-dots{
     display: block !important;
     margin-top: 20px ;
 }
-.related-product-cards .owl-dots .owl-dot span{
+.related-product-cards .owl-dots .owl-dot span,
+.recent-product-cards .owl-dots .owl-dot span{
     background-color: var(--card-grey-1) !important;
     padding: 1px !important;
     margin-top: 20px;
 }
-.related-product-cards .owl-dot.active span{
+.related-product-cards .owl-dot.active span,
+.recent-product-cards .owl-dot.active span{
     background-color: var(--primary-orange) !important;
 }
 
-.related-product-card{
+.related-product-card,
+.recent-product-card{
     cursor: pointer;
     overflow: hidden;
     background-color: var(--card-grey-2);
@@ -625,7 +638,8 @@ section{
     -o-border-radius: 20px;
 }
 
-.related-product-card .pourcentage{
+.related-product-card .pourcentage,
+.recent-product-card .pourcentage{
     color: var(--white);
     background-color: var(--primary-orange);
     font-family: 'teko';
@@ -641,41 +655,52 @@ section{
     -o-transform: rotate(-45deg);
 }
 
-.related-product-card .related-product-card-content .related-product-card-title{
+.related-product-card .related-product-card-content .related-product-card-title,
+.recent-product-card .recent-product-card-content .recent-product-card-title{
     color: var(--primary-orange);
     font-family: 'Teko';
     font-size: 28px;
 }
 
-.related-product-card .related-product-card-content .related-product-card-img{
+.related-product-card .related-product-card-content .related-product-card-img,
+.recent-product-card .recent-product-card-content .recent-product-card-img{
     width: 160px;
     height: 150px;
 }
-.related-product-card .related-product-card-content .card-desc{
+.related-product-card .related-product-card-content .card-desc,
+.recent-product-card .recent-product-card-content .card-desc{
     color: var(--black-secondary); 
     font-family: 'Teko';
     font-size: 16px;
 }
-.related-product-card .related-product-card-content .card-desc .product-desc{
+.related-product-card .related-product-card-content .card-desc .product-desc,
+.recent-product-card .recent-product-card-content .card-desc .product-desc{
     color: var(--black-secondary); 
     font-family: 'Proxima Nova';
     font-size: 16px;
 }
-.related-product-card .related-product-card-content .card-desc .product-rate{
+.related-product-card .related-product-card-content .card-desc .product-rate,
+.recent-product-card .recent-product-card-content .card-desc .product-rate{
     font-size: 14px;
     margin-top: -10px;
 }
-.related-product-card .related-product-card-content .card-desc .product-rate i{
+.related-product-card .related-product-card-content .card-desc .product-rate i,
+.recent-product-card .recent-product-card-content .card-desc .product-rate i{
     color: var(--primary-orange);
 }
-.related-product-card .related-product-card-content .card-desc .related-product-card-product-price{
+.related-product-card .related-product-card-content .card-desc .related-product-card-product-price,
+.recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price{
     font-size: 18px;
+    color: var(--primary-orange);
 }
-.related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price{
+.related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price,
+.recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price .old-price{
     font-size: 14px;
+    color: var(--black-secondary);
 }
 
-.related-product-card-btn{
+.related-product-card-btn,
+.recent-product-card-btn{
     width: 90%;
     bottom: -50px;
     transition: all ease-in-out .2s;
@@ -686,10 +711,12 @@ section{
 }
 
 
-.related-product-card:hover .related-product-card-btn{
+.related-product-card:hover .related-product-card-btn,
+.recent-product-card:hover .recent-product-card-btn{
     bottom:  15px;
 }
-.related-product-card-btn button{
+.related-product-card-btn button,
+.recent-product-card-btn button{
     width: 100%;
     color: var(--white);
     background-color: var(--black);
@@ -707,7 +734,8 @@ section{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.related-product-card-btn button:hover{
+.related-product-card-btn button:hover,
+.recent-product-card-btn button:hover{
     color: var(--white);
     background-color: var(--primary-orange);
 }
@@ -718,16 +746,19 @@ section{
 }
 
 
-.related-product-card:hover .related-product-card-info{
+.related-product-card:hover .related-product-card-info,
+.recent-product-card:hover .recent-product-card-info{
     cursor: pointer;
     top: 20px;
     right: 15px;
 }
-.related-product-card-info:hover{
+.related-product-card-info:hover,
+.recent-product-card-info:hover{
     color: var(--white);
     background-color: var(--primary-orange);
 }
-.related-product-card-info{
+.related-product-card-info,
+.recent-product-card-info{
     position: absolute;
     top: 20px;
     right: -50px;
@@ -746,16 +777,19 @@ section{
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.related-product-card:hover .related-product-card-like{
+.related-product-card:hover .related-product-card-like,
+.recent-product-card:hover .recent-product-card-like{
     cursor: pointer;
     top: 70px;
     right: 15px;
 }
-.related-product-card-like:hover{
+.related-product-card-like:hover,
+.recent-product-card-like:hover{
     color: var(--white);
     background-color: var(--primary-orange);
 }
-.related-product-card-like{
+.related-product-card-like,
+.recent-product-card-like{
     position: absolute;
     top: 70px;
     right: -100px;
@@ -774,16 +808,19 @@ section{
     -ms-transition: all ease-in-out .4s;
     -o-transition: all ease-in-out .4s;
 }
-.related-product-card:hover .related-product-card-eye{
+.related-product-card:hover .related-product-card-eye,
+.recent-product-card:hover .recent-product-card-eye{
     cursor: pointer;
     top: 120px;
     right: 15px;
 }
-.related-product-card-eye:hover{
+.related-product-card-eye:hover,
+.recent-product-card-eye:hover{
     color: var(--white);
     background-color: var(--primary-orange);
 }
-.related-product-card-eye{
+.related-product-card-eye,
+.recent-product-card-eye{
     position: absolute;
     top: 120px;
     right: -150px;
@@ -1126,7 +1163,8 @@ section{
 
 
     
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
         width: 106%;
         position: absolute;
         top: 42%;
@@ -1135,40 +1173,49 @@ section{
         justify-content: space-between;
     }
     .related-product-cards .owl-nav .owl-prev i,
-    .related-product-cards .owl-nav .owl-next i{
+    .related-product-cards .owl-nav .owl-next i,
+    .recent-product-cards .owl-nav .owl-prev i,
+    .recent-product-cards .owl-nav .owl-next i{
         padding: 10px !important;
         font-size: 22px !important;
     }
-    .related-product-cards .owl-dots .owl-dot span{
+    .related-product-cards .owl-dots .owl-dot span,
+    .recent-product-cards .owl-dots .owl-dot span{
         background-color: var(--card-grey-1) !important;
         padding: 2px !important;
         margin-top: 15px;
     }
-    .related-product-cards .owl-dots .owl-dot.active span{
+    .related-product-cards .owl-dots .owl-dot.active span
+    .recent-product-cards .owl-dots .owl-dot.active span{
         background-color: var(--primary-orange) !important;
         padding: 2px !important;
         margin-top: 15px;
     }
 
 
-    .related-product-card .pourcentage{
+    .related-product-card .pourcentage,
+    .recent-product-card .pourcentage{
         font-size: 16px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-title{
+    .related-product-card .related-product-card-content .related-product-card-title,
+    .recent-product-card .recent-product-card-content .recent-product-card-title{
         font-size: 26px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-img{
+    .related-product-card .related-product-card-content .related-product-card-img,
+    .recent-product-card .recent-product-card-content .recent-product-card-img{
         width: 200px;
         height: 200px;
     }
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price{
         font-size: 22px;
         color: var(--primary-orange);
     }
 
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price .old-price{
         color: var(--black-secondary);
     }
 
@@ -1294,7 +1341,8 @@ section{
 
 
     
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
         width: 107%;
         position: absolute;
         top: 42%;
@@ -1303,34 +1351,42 @@ section{
         justify-content: space-between;
     }
     .related-product-cards .owl-nav .owl-prev i,
-    .related-product-cards .owl-nav .owl-next i{
+    .related-product-cards .owl-nav .owl-next i,
+    .recent-product-cards .owl-nav .owl-prev i,
+    .recent-product-cards .owl-nav .owl-next i{
         padding: 10px !important;
         font-size: 22px !important;
     }
-    .related-product-cards .owl-dots .owl-dot span{
+    .related-product-cards .owl-dots .owl-dot span,
+    .recent-product-cards .owl-dots .owl-dot span{
         padding: 2px !important;
         margin-top: 15px;
     }
 
 
-    .related-product-card .pourcentage{
+    .related-product-card .pourcentage,
+    .recent-product-card .pourcentage{
         font-size: 16px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-title{
+    .related-product-card .related-product-card-content .related-product-card-title,
+    .recent-product-card .recent-product-card-content .recent-product-card-title{
         font-size: 26px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-img{
+    .related-product-card .related-product-card-content .related-product-card-img,
+    .recent-product-card .recent-product-card-content .recent-product-card-img{
         width: 200px;
         height: 200px;
     }
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price{
         font-size: 22px;
         color: var(--primary-orange);
     }
 
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price .old-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price .old-price{
         color: var(--black-secondary);
     }
 
@@ -1496,7 +1552,8 @@ section{
     }
 
     
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
         width: 110%;
         position: absolute;
         top: 42%;
@@ -1506,44 +1563,55 @@ section{
     }
 
     .related-product-cards .owl-nav .owl-prev i,
-    .related-product-cards .owl-nav .owl-next i{
+    .related-product-cards .owl-nav .owl-next i,
+    .recent-product-cards .owl-nav .owl-prev i,
+    .recent-product-cards .owl-nav .owl-next i{
         padding: 10px !important;
         font-size: 18px !important;
     }
-    .related-product-cards .owl-dots .owl-dot span{
+    .related-product-cards .owl-dots .owl-dot span,
+    .recent-product-cards .owl-dots .owl-dot span{
         background-color: var(--card-grey-1) !important;
         padding: 2px !important;
         margin-top: 10px;
     }
 
 
-    .related-product-card .pourcentage{
+    .related-product-card .pourcentage,
+    .recent-product-card .pourcentage{
         font-size: 14px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-title{
+    .related-product-card .related-product-card-content .related-product-card-title,
+    .recent-product-card .recent-product-card-content .recent-product-card-title{
         font-size: 22px;
     }
 
-    .related-product-card .related-product-card-content .related-product-card-img{
+    .related-product-card .related-product-card-content .related-product-card-img,
+    .recent-product-card .recent-product-card-content .recent-product-card-img{
         width: 140px;
         height: 140px;
     }
-    .related-product-card .related-product-card-content .card-desc{
+    .related-product-card .related-product-card-content .card-desc,
+    .recent-product-card .recent-product-card-content .card-desc{
         font-size: 16px;
     }
-    .related-product-card .related-product-card-content .card-desc .product-desc{
+    .related-product-card .related-product-card-content .card-desc .product-desc,
+    .recent-product-card .recent-product-card-content .card-desc .product-desc{
         font-size: 14px;
     }
-    .related-product-card .related-product-card-content .card-desc .product-rate{
+    .related-product-card .related-product-card-content .card-desc .product-rate,
+    .recent-product-card .recent-product-card-content .card-desc .product-rate{
         font-size: 12px;
         margin-top: -10px;
     }
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price{
         font-size: 18px;
     }
 
-    .related-product-card-btn{
+    .related-product-card-btn,
+    .recent-product-card-btn{
         width: 90%;
         bottom: -50px;
         transition: all ease-in-out .2s;
@@ -1554,10 +1622,12 @@ section{
     }
 
 
-    .related-product-card :hover .related-product-card-btn{
+    .related-product-card :hover .related-product-card-btn,
+    .recent-product-card :hover .recent-product-card-btn{
         bottom:  15px;
     }
-    .related-product-card-btn button{
+    .related-product-card-btn button,
+    .recent-product-card-btn button{
         width: 100%;
         color: var(--white);
         background-color: var(--black);
@@ -1575,23 +1645,27 @@ section{
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    .related-product-card-btn button:hover{
+    .related-product-card-btn button:hover,
+    .recent-product-card-btn button:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
 
 
 
-    .related-product-card :hover .related-product-card-info{
+    .related-product-card :hover .related-product-card-info,
+    .recent-product-card :hover .recent-product-card-info{
         cursor: pointer;
         top: 20px;
         right: 15px;
     }
-    .related-product-card-info:hover{
+    .related-product-card-info:hover,
+    .recent-product-card-info:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-info{
+    .related-product-card-info,
+    .recent-product-card-info{
         position: absolute;
         top: 20px;
         right: -50px;
@@ -1610,16 +1684,19 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .related-product-card:hover .related-product-card-like{
+    .related-product-card:hover .related-product-card-like,
+    .recent-product-card:hover .recent-product-card-like{
         cursor: pointer;
         top: 70px;
         right: 15px;
     }
-    .related-product-card-like:hover{
+    .related-product-card-like:hover,
+    .recent-product-card-like:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-like{
+    .related-product-card-like,
+    .recent-product-card-like{
         position: absolute;
         top: 70px;
         right: -100px;
@@ -1638,16 +1715,19 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .related-product-card :hover .related-product-card-eye{
+    .related-product-card :hover .related-product-card-eye,
+    .recent-product-card :hover .recent-product-card-eye{
         cursor: pointer;
         top: 120px;
         right: 15px;
     }
-    .related-product-card-eye:hover{
+    .related-product-card-eye:hover,
+    .recent-product-card-eye:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-eye{
+    .related-product-card-eye,
+    .recent-product-card-eye{
         position: absolute;
         top: 120px;
         right: -150px;
@@ -1819,18 +1899,22 @@ section{
         margin-bottom: 5px;
     }
 
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
         width: 114%;
     }
-    .related-product-cards .owl-dots .owl-dot span{
+    .related-product-cards .owl-dots .owl-dot span,
+    .recent-product-cards .owl-dots .owl-dot span{
         background-color: var(--card-grey-1) !important;
         padding: 2px !important;
         margin-top: 10px;
     }
-    .related-product-cards .owl-dot.active span{
+    .related-product-cards .owl-dot.active span,
+    .recent-product-cards .owl-dot.active span{
         background-color: var(--primary-orange) !important;
     }
-    .related-product-card-img{
+    .related-product-card-img,
+    .recent-product-card-img{
         width: 180px !important;
         height: 180px !important;
     }
@@ -1869,7 +1953,9 @@ section{
         -o-border-radius: 10px;
     }
 
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
+
         width: 115%;
     }
 
@@ -1914,7 +2000,9 @@ section{
 
 
     
-    .related-product-cards .owl-nav{
+    .related-product-cards .owl-nav,
+    .recent-product-cards .owl-nav{
+
         width: 119%;
     }
     .shop-by-category-cards .owl-nav{
@@ -1923,7 +2011,8 @@ section{
 
 
 
-    .related-product-card{
+    .related-product-card,
+    .recent-product-card{
         width: 340px;
         overflow: hidden;
         background-color: var(--card-grey-2);
@@ -1934,7 +2023,8 @@ section{
         -o-border-radius: 20px;
     }
     
-    .related-product-card .pourcentage{
+    .related-product-card .pourcentage,
+    .recent-product-card .pourcentage{
         color: var(--white);
         background-color: var(--primary-orange);
         font-family: 'teko';
@@ -1950,39 +2040,47 @@ section{
         -o-transform: rotate(-45deg);
     }
     
-    .related-product-card .related-product-card-content .related-product-card-title{
+    .related-product-card .related-product-card-content .related-product-card-title,
+    .recent-product-card .recent-product-card-content .recent-product-card-title{
         color: var(--primary-orange);
         font-family: 'Teko';
         margin-top: 20px;
         font-size: 28px;
     }
     
-    .related-product-card .related-product-card-content .related-product-card-img{
+    .related-product-card .related-product-card-content .related-product-card-img,
+    .recent-product-card .recent-product-card-content .recent-product-card-img{
         width: 220px;
         height: 220px;
     }
-    .related-product-card .related-product-card-content .card-desc{
+    .related-product-card .related-product-card-content .card-desc,
+    .recent-product-card .recent-product-card-content .card-desc{
         color: var(--black-secondary); 
         font-family: 'Teko';
         font-size: 18px;
     }
-    .related-product-card .related-product-card-content .card-desc .product-desc{
+    .related-product-card .related-product-card-content .card-desc .product-desc,
+    .recent-product-card .recent-product-card-content .card-desc .product-desc{
         color: var(--black-secondary); 
         font-family: 'Proxima Nova';
         font-size: 18px;
     }
-    .related-product-card .related-product-card-content .card-desc .product-rate{
+    .related-product-card .related-product-card-content .card-desc .product-rate,
+    .recent-product-card .recent-product-card-content .card-desc .product-rate{
         font-size: 16px;
         margin-top: -10px;
     }
-    .related-product-card .related-product-card-content .card-desc .product-rate i{
+    .related-product-card .related-product-card-content .card-desc .product-rate i,
+    .recent-product-card .recent-product-card-content .card-desc .product-rate i{
         color: var(--primary-orange);
     }
-    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price{
+    .related-product-card .related-product-card-content .card-desc .related-product-card-product-price,
+    .recent-product-card .recent-product-card-content .card-desc .recent-product-card-product-price{
         font-size: 24px;
     }
     
-    .related-product-card-btn{
+    .related-product-card-btn,
+    .recent-product-card-btn{
         width: 90%;
         bottom: -50px;
         transition: all ease-in-out .2s;
@@ -1993,10 +2091,12 @@ section{
     }
     
     
-    .related-product-card :hover .related-product-card-btn{
+    .related-product-card :hover .related-product-card-btn,
+    .recent-product-card :hover .recent-product-card-btn{
         bottom:  15px;
     }
-    .related-product-card-btn button{
+    .related-product-card-btn button,
+    .recent-product-card-btn button{
         width: 100%;
         color: var(--white);
         background-color: var(--black);
@@ -2014,23 +2114,27 @@ section{
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    .related-product-card-btn button:hover{
+    .related-product-card-btn button:hover,
+    .recent-product-card-btn button:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
 
 
 
-    .related-product-card :hover .related-product-card-info{
+    .related-product-card :hover .related-product-card-info,
+    .recent-product-card :hover .recent-product-card-info{
         cursor: pointer;
         top: 20px;
         right: 15px;
     }
-    .related-product-card-info:hover{
+    .related-product-card-info:hover,
+    .recent-product-card-info:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-info{
+    .related-product-card-info,
+    .recent-product-card-info{
         position: absolute;
         top: 20px;
         right: -50px;
@@ -2049,16 +2153,19 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .related-product-card:hover .related-product-card-like{
+    .related-product-card:hover .related-product-card-like,
+    .recent-product-card:hover .recent-product-card-like{
         cursor: pointer;
         top: 70px;
         right: 15px;
     }
-    .related-product-card-like:hover{
+    .related-product-card-like:hover,
+    .recent-product-card-like:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-like{
+    .related-product-card-like,
+    .recent-product-card-like{
         position: absolute;
         top: 70px;
         right: -100px;
@@ -2077,16 +2184,19 @@ section{
         -ms-transition: all ease-in-out .4s;
         -o-transition: all ease-in-out .4s;
     }
-    .related-product-card :hover .related-product-card-eye{
+    .related-product-card :hover .related-product-card-eye,
+    .recent-product-card :hover .recent-product-card-eye{
         cursor: pointer;
         top: 120px;
         right: 15px;
     }
-    .related-product-card-eye:hover{
+    .related-product-card-eye:hover,
+    .recent-product-card-eye:hover{
         color: var(--white);
         background-color: var(--primary-orange);
     }
-    .related-product-card-eye{
+    .related-product-card-eye,
+    .recent-product-card-eye{
         position: absolute;
         top: 120px;
         right: -150px;
