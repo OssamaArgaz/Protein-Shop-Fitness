@@ -62,7 +62,7 @@
                                 <a class="" href="#">Blog</a>
                             </li>
                             <li class="">
-                                <a class="" href="#">Contact</a>
+                                <a class="" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="cart-shop-img me-4 position-relative">
                             <span class="position-absolute">0</span>
-                            <a href="#"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#shoopingCarteOffcanvas" aria-controls="shoopingCarteOffcanvas"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <div class="hero-navbar-right-responsive d-flex justify-content-center align-items-center">
                         <div class="cart-shop-img position-relative">
                             <span class="position-absolute">0</span>
-                            <a href="#"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
+                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#shoopingCarteOffcanvas" aria-controls="shoopingCarteOffcanvas"><img class="cart-market" src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg"></a>
                         </div>
                     </div>
                 </div>
@@ -128,12 +128,152 @@
                                 <a class="mt-4" href="blog.html">Blog</a>
                             </li>
                             <li class="mt-4">
-                                <a class="mt-4" href="login.html">Contact</a>
+                                <a class="mt-4" href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                     <!-- offcanvas navbar for responsive END -->
+
+
+                            <!-- shooping carte offcanvas START -->
+                <div class="offcanvas offcanvas-end shooping-carte-offcanvas pt-2" tabindex="-1" id="shoopingCarteOffcanvas" aria-labelledby="shoopingCarteOffcanvas">
+                    <div class="offcanvas-header">
+                        <h6 class="offcanvas-title" id="shoopingCarteOffcanvas">shopping cart</h6>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <hr class="w-100 m-auto">
+                    <div class="offcanvas-body">
+                        <div class="carte-empty d-none w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img src="./assest/img/4781813_bag_buy_cart_market_shop_icon.svg" alt="">
+                            <p>Votre carte est vide.</p>
+                            <button>Commencer les achats</button>
+                        </div>
+                        <div class="carte-active">
+                            <div class="product-active row mb-4">
+                                <div class="product-active-img col-3 d-flex justify-content-center align-items-center">
+                                    <img src="./assest/img/R.png" class="" alt="">
+                                </div>
+                                <div class="col-9 h-100">
+                                    <h6 class="product-active-title">Creatine</h6>
+                                    <p class="product-active-subtitle">creatine monohydrate 300g Scitec Nutrition</p>
+                                    <div class="product-active-info">
+                                        <p class="product-active-price">$ <span>99.00</span> <s class="ms-1">$ <span class="product-active-old-price">199.00</span></s></p>
+                                        <div class="d-flex">
+                                            <div class="product-active-pourcentage me-2 mt-2">
+                                                <span>25%</span>
+                                            </div>
+                                            <div class="product-active-flavour me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>Unflavored</span>
+                                            </div>
+                                            <div class="product-active-masse me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>300g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-active-button w-100 mt-2 d-flex">
+                                        <button class="add-product-active-count">
+                                            <i class="icofont-minus-circle"></i>
+                                            <span class="mx-4">1</span>
+                                            <i class="icofont-plus-circle"></i>
+                                        </button>
+                                        <button class="delete-product-active ms-2"><i class="icofont-ui-delete"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="product-active row mb-4">
+                                <div class="product-active-img col-3 d-flex justify-content-center align-items-center">
+                                    <img src="./assest/img/01920257927516ec5b90b2c064f0f4f1.png" class="" alt="">
+                                </div>
+                                <div class="col-9 h-100">
+                                    <h6 class="product-active-title">Creatine</h6>
+                                    <p class="product-active-subtitle">creatine monohydrate 300g Scitec Nutrition</p>
+                                    <div class="product-active-info">
+                                        <p class="product-active-price">$ <span>99.00</span> <s class="ms-1">$ <span class="product-active-old-price">199.00</span></s></p>
+                                        <div class="d-flex">
+                                            <div class="product-active-pourcentage me-2 mt-2">
+                                                <span>25%</span>
+                                            </div>
+                                            <div class="product-active-flavour me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>Unflavored</span>
+                                            </div>
+                                            <div class="product-active-masse me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>300g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-active-button w-100 mt-2 d-flex">
+                                        <button class="add-product-active-count">
+                                            <i class="icofont-minus-circle"></i>
+                                            <span class="mx-4">1</span>
+                                            <i class="icofont-plus-circle"></i>
+                                        </button>
+                                        <button class="delete-product-active ms-2"><i class="icofont-ui-delete"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="product-active row mb-4">
+                                <div class="product-active-img col-3 d-flex justify-content-center align-items-center">
+                                    <img src="./assest/img/scitec_creatine_monohydrate_300g.png" class="" alt="">
+                                </div>
+                                <div class="col-9 h-100">
+                                    <h6 class="product-active-title">Creatine</h6>
+                                    <p class="product-active-subtitle">creatine monohydrate 300g Scitec Nutrition</p>
+                                    <div class="product-active-info">
+                                        <p class="product-active-price">$ <span>99.00</span> <s class="ms-1">$ <span class="product-active-old-price">199.00</span></s></p>
+                                        <div class="d-flex">
+                                            <div class="product-active-pourcentage me-2 mt-2">
+                                                <span>25%</span>
+                                            </div>
+                                            <div class="product-active-flavour me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>Unflavored</span>
+                                            </div>
+                                            <div class="product-active-masse me-2 mt-2 d-flex justify-content-center align-items-center">
+                                                <span>300g</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-active-button w-100 mt-2 d-flex">
+                                        <button class="add-product-active-count">
+                                            <i class="icofont-minus-circle"></i>
+                                            <span class="mx-4">1</span>
+                                            <i class="icofont-plus-circle"></i>
+                                        </button>
+                                        <button class="delete-product-active ms-2"><i class="icofont-ui-delete"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offcanvas-footer shooping-carte-offcanvas-footer py-4 px-2">
+                        <div class="offerte">
+                            <div class="text-center">
+                                <h6 class="offerte-title cadeau-offerte">Il vous rest <span>14</span> $ pour le cadeau offerte</h6>
+                                <h6 class="offerte-title livraison-offerte d-none">Il vous rest <span>14</span> $ pour la livraison offerte</h6>
+                            </div>
+                            <div class="offerte-range-container position-relative mt-4">
+                                <div class="offerte-range position-relative overflow-hidden">
+                                    <div class="offerte-range-active position-absolute top-0 start-0 h-100"></div>
+                                    <span class="point cadeau-point position-absolute top-0"></span>
+                                    <span class="point livraison-point position-absolute top-0"></span>
+                                </div>
+                                <span class="shooping-carte-tooltipe cadeau-tooltipe position-absolute"><img src="./assest/img/gift_2349798.png" alt=""></span>
+                                <span class="shooping-carte-tooltipe livraison-tooltipe position-absolute"><img src="./assest/img/shipping-fast-solid-svgrepo-com.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="commande-price mt-4 px-2 d-flex justify-content-between align-items-center">
+                            <h6 class="pt-2">Total Commande :</h6>
+                            <p><span class="total-price">18</span>$</p>
+                        </div>
+                        <button class="mt-2">Finaliser Ma commande</button>
+                    </div>
+                </div>
+                    <!-- shooping carte offcanvas START -->
+
+
 
             </section>
 
