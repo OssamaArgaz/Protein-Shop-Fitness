@@ -351,13 +351,13 @@ section{
 .livraison-point{
     left: 60%;
 }
-.tooltipe{
+.shooping-carte-tooltipe{
     top: -15px;
     padding: 5px 8px;
     background-color: var(--primary-orange);
     border-radius: 50%;
 }
-.tooltipe img{
+.shooping-carte-tooltipe img{
     width: 25px;
     height: 25px;
 }
@@ -411,7 +411,7 @@ section{
 }
 .product-active-img img{
     width: 80px;
-    height: 100px;
+    height: 90px;
 }
 .product-active-title{
     color: var(--black-secondary);
@@ -2136,14 +2136,14 @@ section{
     .product-active-button button{
         font-size: 14px;
     }
-    .tooltipe{
+    .shooping-carte-tooltipe{
         top: -12px;
         padding: 5px 8px;
     }
     .offerte-title{
         font-size: 14px;
     }
-    .tooltipe img{
+    .shooping-carte-tooltipe img{
         width: 20px;
         height: 20px;
     }

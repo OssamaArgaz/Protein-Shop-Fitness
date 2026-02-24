@@ -29,7 +29,7 @@
     --white: #ffffff;
     --black: #222;
     --black-secondary: rgba(0, 0, 0, 0.721);
-    --card-grey: rgba(169, 169, 169, 0.5);
+    --card-grey-1: rgba(169, 169, 169, 0.5);
     --card-grey-2: rgba(228, 228, 228, 0.564);
     --post-grey: rgba(228, 228, 228, 0.445);
 }
@@ -307,6 +307,227 @@ section{
 
 
 
+
+/* shooping carte offcanvas */
+.shooping-carte-offcanvas{
+    width: 40% !important;
+}
+.shooping-carte-offcanvas hr{
+    box-shadow: 1px 1px 1px var(--black-secondary);
+}
+.shooping-carte-offcanvas .btn-close{
+    box-shadow: none;
+}
+.offcanvas-title{
+    font-family: 'Akira Expanded';
+}
+.carte-empty img{
+    width: 120px;
+    height: 120px;
+}
+.carte-empty p{
+    font-family: 'Proxima Nova';
+}
+.carte-empty button{
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'Akira Expanded';
+    font-size: 12px;
+    padding: 10px 35px;
+    border: 1.4px solid var(--white);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.carte-empty button:hover{
+    color: var(--primary-orange);
+    background-color: var(--white);
+    border: 1.4px solid var(--primary-orange);
+}
+.offcanvas-footer{
+    height: 35%;
+    box-shadow: 1px 1px 5px var(--black-secondary);
+}
+.offerte-title{
+    font-family: 'teko';
+}
+.offerte-title span{
+    color: var(--primary-orange);
+}
+.offerte-range{
+    width: 100%;
+    height: 10px;
+    background-color: var(--card-grey-1);
+    border-radius: 5px;
+}
+.offerte-range-active{
+    width: 25%;
+    background-color: var(--primary-orange);
+}
+.point{
+    padding: 5px;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+.cadeau-point{
+    left: 25%;
+}
+.livraison-point{
+    left: 60%;
+}
+.shooping-carte-tooltipe{
+    top: -15px;
+    padding: 5px 8px;
+    background-color: var(--primary-orange);
+    border-radius: 50%;
+}
+.shooping-carte-tooltipe img{
+    width: 25px;
+    height: 25px;
+}
+.cadeau-tooltipe{
+    z-index: 3;
+    left: 25%;
+}
+.livraison-tooltipe{
+    z-index: 2;
+    left: 25%;
+}
+.commande-price h6{
+    font-size: 12px;
+    font-family: 'Akira Expanded';
+}
+.commande-price p{
+    margin: 0;
+    font-family: 'teko';
+    color: var(--primary-orange);
+}
+.offcanvas-footer button{
+    width: 100%;
+    color: var(--white);
+    background-color: var(--primary-orange);
+    font-family: 'Akira Expanded';
+    font-size: 12px;
+    padding: 10px 35px;
+    border: 1.4px solid var(--white);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.offcanvas-footer button:hover{
+    color: var(--primary-orange);
+    background-color: var(--white);
+    border: 1.4px solid var(--primary-orange);
+}
+.carte-active p{
+    margin: 0;
+    padding: 0;
+}
+.product-active{
+    font-family: 'teko';
+}
+.product-active-img img{
+    width: 80px;
+    height: 90px;
+}
+.product-active-title{
+    color: var(--black-secondary);
+}
+.product-active-subtitle{
+    font-size: 14px;
+    font-family: 'Akira Expanded';
+    display: -webkit-box; /* pour le titre prend seulement ca place */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product-active-price{
+    font-size: 22px;
+    color: var(--primary-orange);
+}
+.product-active-price s{
+    color: var(--black);
+    font-size: 14px;
+}
+.product-active-pourcentage{
+    font-size: 16px;
+    color: var(--primary-orange);
+    background-color: var(--white);
+    padding: 5px 8px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.product-active-flavour,
+.product-active-masse{
+    font-size: 16px;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 5px 8px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.product-active-button button{
+    font-family: 'teko';
+    color: var(--black);
+    background-color: var(--white);
+    padding: 5px 10px;
+    outline: none;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.product-active-button .add-product-active-count i:hover{
+    color: var(--primary-orange);
+    transition: all ease-in-out .4s;
+    -webkit-transition: all ease-in-out .4s;
+    -moz-transition: all ease-in-out .4s;
+    -ms-transition: all ease-in-out .4s;
+    -o-transition: all ease-in-out .4s;
+}
+.delete-product-active:hover{
+    color: var(--white);
+    background-color: var(--primary-orange);
+}
+
+.shooping-carte-offcanvas-footer{
+    height: auto;
+}
+
+
+
+
+
 .shop{
     background-color: var(--white);
     border-radius: 0 0 50px 50px;
@@ -348,7 +569,7 @@ section{
 .shop-sorting-range{
     height: 10px;
     margin: 60px 0 0 0;
-    background: var(--card-grey);
+    background: var(--card-grey-1);
     position: relative;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1135,6 +1356,11 @@ input[type="range"]::-ms-thumb {
     }
 
 
+/* shooping carte offcanvas */
+    .shooping-carte-offcanvas{
+        width: 80% !important;
+    }
+
 
 
 
@@ -1448,6 +1674,53 @@ input[type="range"]::-ms-thumb {
     .product_card .product_card_content .product_card_img{
         width: 180px;
         height: 180px;
+    }
+
+/* shooping carte offcanvas */
+    .shooping-carte-offcanvas{
+        width: 100% !important;
+    }
+    .offcanvas-title{
+        font-size: 14px;
+    }
+    .product-active-title{
+        font-size: 14px;
+    }
+    .product-active-subtitle{
+        font-size: 12px;
+    }
+    .product-active-price{
+        font-size: 18px;
+    }
+    .product-active-price s{
+        font-size: 12px;
+    }
+    .product-active-pourcentage{
+        font-size: 14px;
+    }
+    .product-active-flavour,
+    .product-active-masse{
+        font-size: 14px;
+    }
+    .product-active-button button{
+        font-size: 14px;
+    }
+    .shooping-carte-tooltipe{
+        top: -12px;
+        padding: 5px 8px;
+    }
+    .offerte-title{
+        font-size: 14px;
+    }
+    .shooping-carte-tooltipe img{
+        width: 20px;
+        height: 20px;
+    }
+    .commande-price h6{
+        font-size: 10px;
+    }
+    .offcanvas-footer button{
+        font-size: 10px;
     }
 }
 
